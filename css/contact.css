@@ -1,0 +1,193 @@
+.building__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(rgba(29, 27, 27, 0.65), rgba(29, 27, 27, 0.65)),  url('/images/PDRC Building_II.png');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay-background {
+    background-color: rgba(29, 27, 27, 0.65); 
+    height: 100%;
+}
+  
+.overlay__container {
+    max-width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+    margin-top: 5rem;
+}@media (max-width: 1358px){
+    .hamburger-menu-container{
+        display: flex;
+    }
+    #check{
+        display: block;
+    }
+
+    .nav-btn{
+        position: fixed;
+        height: calc(100vh - 2.6rem);
+        top: 2.6rem;
+        right: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        overflow-x: hidden;
+        overflow-y: auto;
+        transform: translateX(100%);
+        transition: .65s;
+        box-shadow: 0 2px 8px hsla(220, 68%, 12%, 0.1);
+
+    }
+
+    #check:checked ~ .nav-btn{
+        transform: translateX(0);
+    }
+
+    #check:checked ~ .nav-btn .nav-link,
+    #check:checked ~ .nav-btn .log-sign{
+        animation: animation .5s ease forwards var(--i);
+    }
+
+    .nav-links{
+        flex: initial;
+        width: 100%;
+    }
+
+    .nav-links > ul{
+        flex-direction: column;
+    }
+
+    .nav-link{
+        width: 100%;
+        opacity: 0;
+        transform: translateY(15px);
+    }
+   
+    .nav-link > a{
+        line-height: 1;
+        padding: 1.6rem 2rem;
+    }
+
+    .nav-link:hover > a{
+        transform: scale(1);
+    }
+
+    .dropdown, .dropdown-2{
+        position: initial;
+        top: initial;
+        left: initial;
+        transform: initial;
+        opacity: 1;
+        pointer-events: auto;
+        width: 100%;
+        padding: 0;
+        background-color: rgba(121,17,24,0.3);
+        display: none;
+    }
+    
+    .nav-link:hover > .dropdown,.nav-link:hover > .dropdown-2,
+    .dropdown-link:hover > .dropdown, .dropdown-link:hover > .dropdown-2{
+        display: block;
+    }
+
+    .nav-link:hover > a > i,
+    .dropdown-link:hover > a > i{
+        transform: rotate(360deg);
+    }
+
+    .dropdown-link > a{
+        background-color: transparent;
+        color: #000;
+        padding: 1.2rem 2rem;
+        line-height: 1;
+    }
+
+    .dropdown-link:not(:nth-last-child(2)){
+        border-bottom: none;
+    }
+
+    .nav-link > a > i{
+        font-size: 1.1rem;
+        transform: rotate(-90deg);
+        transition: .7s;
+    }
+
+    .dropdown i, .dropdown-2 i{
+        font-size: 1rem;
+        transition: .7s;
+    }
+
+    .log-sign{
+        flex: initial;
+        width: 100%;
+        padding: 1.5rem 1.9rem;
+        justify-content: flex-start;
+        opacity: 0;
+        transform: translateY(15px);
+    }
+}
+
+
+
+.bg__white {
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    padding-right: 2rem;
+}
+
+p {
+    margin-bottom: 0rem !important;
+}
+.padding__image {
+    padding: 2rem !important;
+}
+.image__width {
+    width: 86.4px;
+}
+.col-lg-4 {
+    margin-top: 2rem;
+}
+.custom__input__block {
+    margin-top: 5rem;
+}
+.custom__input__text {
+    padding: 1.5rem !important;
+}
+.submit__button {
+    background: linear-gradient(to right, #791118, #DF1F2C 100%);
+    border: none;
+    display: block;
+    margin: 4rem auto;
+    color: white;
+    padding: 1rem 6rem;
+    border-radius: 20px;
+}
+#map {
+    height: 400px;
+    width: 100%;
+  }
+@media screen and (max-width: 1399px) {
+    .text__box {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 1199px) {
+    .text__box {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .text__box {
+        font-size: 14px;
+    }
+}

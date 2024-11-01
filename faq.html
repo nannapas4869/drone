@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./fontawesome/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/faq.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Drone Project</title>
+</head>
+<body>
+    <header>
+        <div class="container-custom">
+            <input type="checkbox" name="" id="check">
+            
+            <div class="logo-container">
+                <img src="/images/PDRC-logo.svg" alt="logo" width="40">
+            </div>
+
+            <div class="nav-btn">
+                <div class="nav-links">
+                    <ul>
+                        <li class="nav-link" style="--i: .6s">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="nav-link" style="--i: .85s">
+                            <a href="#">Course</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                       <a href="#"> <img src="/images/reactangle.png" alt="rectangle" width="10" class="rectangle__image"> Drone Pilot for Beginner</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#"> <img src="/images/reactangle.png" alt="rectangle" width="10" class="rectangle__image"> Drone Pilot for Professional</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#"><img src="/images/reactangle.png" alt="rectangle" width="10" class="rectangle__image"> Inspection for Infrared Thermography</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#"><img src="/images/reactangle.png" alt="rectangle" width="10" class="rectangle__image"> Customized Course Training</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#"><img src="/images/reactangle.png" alt="rectangle" width="10" class="rectangle__image"> Free Course Training</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.1s">
+                            <a href="#">Activities</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="knowledge_sharing.html">Knowledge Sharing</a>
+                            <div class="dropdown-2">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="#"><img src="/images/reactangle.png" alt="rectangle" width="10" class="rectangle__image"> บทความ</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#" id="promo-docs-link"><img src="/assets/images/reactangle.png" alt="rectangle" width="10" class="rectangle__image"> เอกสารประชาสัมพันธ์ </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="faq.html" class="active">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="log-sign" style="--i: 1.8s">
+                    <a href="#" class="login__button">Log in</a>
+                    <a href="#" class="signup__button">Sign up</a>
+                </div>
+            </div>
+
+            <div class="hamburger-menu-container">
+                <div class="hamburger-menu">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div>
+        <img src="/images/faq_banner.png" alt="faq_banner" width="100%">
+    </div>
+    <div class="container__custom">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="input-group input-group-lg mt-5">
+                    <input type="text" id="globalSearch" class="form-control search__input" placeholder="ค้นหา">
+                </div>
+            </div>
+        </div>
+        <div class="question__block mt-5">
+            <i class="ri-add-fill plus__icon" id="pi_1"></i>
+            <i class="ri-subtract-fill subtract__icon" id="si_1"></i>
+            <span class="question__text">เปิดอบรมหลักสูตรอบรมอะไรบ้างและราคาแต่ละหลักสูตรเท่าไหร่?</span>
+        </div>
+        <div class="answer__block" id="ab_1">
+            <span class="answer__text">กรุณาตรวจสอบได้ที่ <a href="#" target="__blank">ลิงค์</a> นี้</span>
+        </div>
+        <div class="question__block mt-3">
+            <i class="ri-add-fill plus__icon" id="pi_2"></i>
+            <i class="ri-subtract-fill subtract__icon" id="si_2"></i>
+            <span class="question__text">จำเป็นต้องมีพื้นฐานการบินโดรนมาก่อนหรือไม่?</span>
+        </div>
+        <div class="answer__block" id="ab_2">
+            <span class="answer__text">ไม่จำเป็น ศูนย์ฝึกอบรมฯ มีหลักสูตรตั้งแต่ขั้นพื้นฐานที่เปิดสอน จนถึงขั้นสูงเพื่อประกอบอาชีพ </span>
+        </div>
+        <div class="question__block mt-3">
+            <i class="ri-add-fill plus__icon" id="pi_3"></i>
+            <i class="ri-subtract-fill subtract__icon" id="si_3"></i>
+            <span class="question__text">กรณีไม่มีโดรนสามารถสมัครเรียนได้หรือไม่?</span>
+        </div>
+        <div class="answer__block" id="ab_3">
+            <span class="answer__text">ได้ เนื่องจากศูนย์ฝึกอบรมฯ มีโดรน สำหรับใช้ฝึกอบรมในแต่ละหลักสูตรอยู่แล้ว</span>
+        </div>
+        <div class="question__block mt-3">
+            <i class="ri-add-fill plus__icon" id="pi_4"></i>
+            <i class="ri-subtract-fill subtract__icon" id="si_4"></i>
+            <span class="question__text">สามารถนำโดรนของตนเองมาใช้เรียนได้หรือไม่?</span>
+        </div>
+        <div class="answer__block" id="ab_4">
+            <span class="answer__text">ได้ แต่ต้องเป็นโดรนรุ่นที่มีคุณสมบัติและความสามารถตรงตามวัตถุประสงค์แต่ละหลักสูตร</span>
+        </div>
+        <div class="question__block mt-3">
+            <i class="ri-add-fill plus__icon" id="pi_5"></i>
+            <i class="ri-subtract-fill subtract__icon" id="si_5"></i>
+            <span class="question__text">สถานที่ตั้งศูนย์ฝึกอบรมอยู่ที่ไหน?</span>
+        </div>
+        <div class="answer__block" id="ab_5">
+            <span class="answer__text">362/24 หมู่ที่10 ตำบลห้วยหญ่ อำเภอบางละมุง จังหวัดชลบุรี 20150 
+                พิกัดที่ตั้ง <a href="#" target="_blank">ลิงค์</a>
+            </span>
+        </div>
+        <div class="question__block mt-3">
+            <i class="ri-add-fill plus__icon" id="pi_6"></i>
+            <i class="ri-subtract-fill subtract__icon" id="si_6"></i>
+            <span class="question__text">ผู้เรียนต้องมีคุณสมบัติอย่างไร?</span>
+        </div>
+        <div class="answer__block" id="ab_6">
+            <span class="answer__text">ควรมีอายุอย่างน้อย 18 ปี ขึ้นไป มีสุขภาพแข็งแรงทั้งสภาพร่างกายและสภาพจิตใจ ผ่านการ
+                ตรวจตาบอดสี (มีใบรับรองแพทย์) และในกรณีที่มีอายุต่ำกว่า 18 ปี ทางศูนย์ฝึกอบรมฯ จะพิจารณา
+                เป็นรายกรณีไป           
+            </span>
+        </div>
+        <div class="question__block mt-3">
+            <i class="ri-add-fill plus__icon" id="pi_7"></i>
+            <i class="ri-subtract-fill subtract__icon" id="si_7"></i>
+            <span class="question__text">ศูนย์ฝึกอบรมฯ ใช้โดรนยี่ห้อหรือรุ่นอะไรในการฝึกอบรม?</span>
+        </div>
+        <div class="answer__block" id="ab_7">
+            <span class="answer__text">ใช้แตกต่างกันไปขึ้นกับหลักสูตร โดยรวมศูนย์ฝึกอบรมฯ จะมีโดรนอยู่ด้วยกัน 2 แบบ คือ 
+                <ol>
+                    <li>แบบปีกหมุน (Multi Rotor) ยี่ห้อ DJI รุ่น M300 RTK, Mavic 3E และ Mavic 3T </li>
+                    <li>แบบปีกตรึง ขึ้นลงทางดิ่ง (VTOL) ยี่ห้อ JOUAV รุ่น CW-007</li>
+                </ol>
+            </span>
+        </div>
+        <div class="question__block mt-3">
+            <i class="ri-add-fill plus__icon" id="pi_8"></i>
+            <i class="ri-subtract-fill subtract__icon" id="si_8"></i>
+            <span class="question__text">ครูฝึกมีใบรับรองและความรู้ความชำนาญการบินอากาศยานไร้คนขับแบบใดบ้าง?</span>
+        </div>
+        <div class="answer__block" id="ab_8">
+            <span class="answer__text">ครูผู้ฝึกสอนทุกคนของศูนย์ฝึกอบรมฯ ผ่านหลักสูตรครูการบินอากาศยานไร้คนขับ (Instructor 
+                Remote Pilot Certified, IRPC) จากสถาบันเทคโนโลยีป้องกันประเทศ (DTI-UTC) ซึ่งเป็น
+               หลักสูตรที่ได้รับการรับรองโดยสำนักงานการบินพลเรือนแห่งประเทศไทย (CAAT) และผ่านการ
+   ฝึกอบรมนักบินอากาศยานไร้คนขับจากต่างประเทศ ทั้งแบบปีกหมุน (Multi Rotor) และแบบ
+   ปีกตรึง ขึ่นลงทางดิ่ง (Vertical Takeoff and Landing, VTOL) มีประสบการณ์งานบิน
+   ตรวจสอบมามากกว่า 17 ปี จัดฝึกอบรมให้หน่วยงานภาครัฐและภาคเอกชน มาแล้วมากมาย
+ 
+            </span>
+        </div>
+        <div class="question__block mt-3">
+            <i class="ri-add-fill plus__icon" id="pi_9"></i>
+            <i class="ri-subtract-fill subtract__icon" id="si_9"></i>
+            <span class="question__text">หลังจากจบการฝึกอบรมแต่ละหลักสูตรจะได้รับอะไรบ้าง?</span>
+        </div>
+        <div class="answer__block" id="ab_9">
+            <span class="answer__text">
+                หลังจากจบการฝึกอบรมและผ่านเกณฑ์การทดสอบ ผู้เข้ารับการฝึกจะได้รับใบประกาศนียบัตร
+               รับรองการบินนักบินโดรนในแต่ละหลักสูตรเฉพาะ (Specific) สามารถนำไปประกอบการ
+               ทำงานและขึ้นทะเบียนขอใบอนุญาติการเป็นนักบินโดรนกับสำนักงานการบินพลเรือนแห่ง
+               ประเทศไทย (CAAT) 
+            </span>
+        </div>
+        <div class="question__block mt-3">
+            <i class="ri-add-fill plus__icon" id="pi_10"></i>
+            <i class="ri-subtract-fill subtract__icon" id="si_10"></i>
+            <span class="question__text">ต้องใช้เวลาการฝึกอบรมนานแค่ไหน?</span>
+        </div>
+        <div class="answer__block" id="ab_10">
+            <span class="answer__text">
+                แต่ละหลักสูตรจะใช้ระยะเวลาการฝึกอบรมไม่เท่ากัน น้อยสุด 2 วัน มากสุด 10 วัน 
+            </span>
+        </div>
+        <div class="question__block mt-3">
+            <i class="ri-add-fill plus__icon" id="pi_11"></i>
+            <i class="ri-subtract-fill subtract__icon" id="si_11"></i>
+            <span class="question__text">ต้องการสำรองที่นั่งและกรณีมีข้อสงสัยเพิ่มเติมสอบถามข้อมูลได้ที่?</span>
+        </div>
+        <div class="answer__block margin__bottom__11"  id="ab_11">
+            <span class="answer__text">
+                คุณสุมิตา สว่างวงค์ (มดแดง) โทร. 06-4654 4664
+            </span>
+        </div>
+    </div>
+    <div class="footer__block">
+        <p class="footer__text">Footer</p>
+    </div>
+    <script src="/js/faq.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
