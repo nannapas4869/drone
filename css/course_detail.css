@@ -1,0 +1,329 @@
+.title__main {
+    margin-top: 3rem;
+    font-size: 25px;
+    font-weight: 600;
+}
+.teacher__name {
+    padding: 2rem;
+}
+.teacher__text {
+    margin-bottom: 0.3rem;
+}
+.vertical__line {
+    width: 2px;
+    height: 50px;
+    background-color: #000;
+    margin-top: 2rem;
+}
+.price__detail {
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 5px 14px rgba(0,0,0,0.25);
+    margin-top: 3rem;
+    border-radius: 30px;
+    padding-bottom: 2rem;
+}
+.price {
+    font-size: 40px;
+    text-align: center;
+    color: #791118;
+    padding-top: 2rem;
+}
+.register__link {
+    display: block;
+    margin: 0 auto 1rem auto;
+    border: none;
+    background-color: #791118;
+    padding: 1rem 7rem;
+    border-radius: 100px;
+}
+.register__link a {
+    color: white;
+}
+.cart__link {
+    display: block;
+    margin: 0 auto 2rem auto;
+    border: 1px solid #791118;
+    background-color: white;
+    padding: 0.35rem 5.5rem;
+    border-radius: 100px;
+}
+.cart__link a {
+    color: #791118;
+}
+.cart {
+    font-size: 30px;
+    padding-top: 0.5rem;
+}
+.line__cart {
+    height: 1px;
+    width: 100%;
+    background-color: #D8D8D8;
+    margin-top: 3rem;
+}
+.course__detail {
+    font-size: 30px;
+    padding: 2rem 2rem 0.5rem 2rem;
+}
+.duration__block {
+    margin-left: 2rem;
+}
+.text__align {
+    text-align: right
+}
+.certificate__align {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 30px;
+}
+.certificate__align__text {
+    padding: 0 2rem 0 2rem;
+    text-align: center;
+}
+.certificate__image {
+    display: block;
+    margin: 0 auto 3rem auto;
+}
+.overlay-container {
+    position: relative;
+    width: 100%;
+}
+
+.overlay-image-text {
+    background-image: url('/images/banner__3.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: black; /* Change color as needed */
+    padding: 10px 7rem; /* Adjust padding for better layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100dvh; 
+    font-size: 20px;
+}
+
+.advantage {
+    margin-top: 5rem;
+    margin-left: 7rem;
+    margin-bottom: 4rem !important;
+    font-size: 30px;
+    font-weight: 700;
+}
+.advantage__first {
+    background-color: white;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.25);
+    padding: 1rem 1rem 0.7rem 1rem;
+    display: flex;
+    flex-direction: row;
+    border-radius: 60px;
+}
+.advantage__second {
+    background-color: white;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.25);
+    padding: 1rem 1rem 0.7rem 1rem;
+    display: flex;
+    flex-direction: row;
+    border-radius: 60px;
+}
+.advantage__second__text {
+    padding-top: 0.7rem;
+}
+.advantage__margin__align {
+    margin-bottom: 5rem;
+}
+.organization {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 4rem;
+}
+.organization__block {
+    background-color: white;
+    height: auto;
+    width: 100%;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+}
+.detail {
+    background-color: #F5F4F4;
+    width: 100%;
+    height: auto;
+    padding: 3rem 0;
+    margin-bottom: 3rem;
+}
+.course__text {
+    font-size: 30px;
+    font-weight: 600;
+}
+.course__text__2 {
+    font-size: 20px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.unorder li {
+    list-style: circle;
+}
+.unorder {
+    margin-left: 2rem !important;
+}
+.lecture {
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+.learn {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 5rem;
+}
+.body__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.gallery {
+    width: 100%;
+}
+.gallery-container {
+    align-items: center;
+    display: flex;
+    height: 400px;
+    margin: 0 auto;
+    max-width: 1000px;
+    position: relative;
+}
+.gallery-item {
+    height: 200px;
+    opacity: 0;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+    width: 330px;
+    z-index:0;
+    border-radius: 15px;
+    background-size: contain;
+}
+.gallery-item-1 {
+    left: 15%;
+    opacity: .4;
+    transform: translateX(-50%);
+}
+.gallery-item-2, .gallery-item-4 {
+    height: 250px;
+    opacity: 0.8;
+    width: 380px;
+    z-index: 1;
+}
+.gallery-item-2 {
+    left: 30%;
+    transform: translateX(-50%);
+}
+.gallery-item-3 {
+    box-shadow: -2px 5px 33px 6px rgba(0,0,0,0.35);
+    height: 300px;
+    opacity: 1;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 430px;
+    z-index: 2;
+}
+.gallery-item-4 {
+    left: 70%;
+    transform: translateX(-50%);
+}
+.gallery-item-5 {
+    left: 85%;
+    opacity: .4;
+    transform: translateX(-50%);
+}
+.gallery-controls {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+    height: 100px;
+}
+.gallery-controls-button {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 30px;
+    margin: 0 50px;
+    padding: 0 12px;
+    text-transform: capitalize;
+}
+
+.gallery-controls-button:focus{
+    outline: none;
+}
+.gallery-controls-previous {
+    position: relative;
+}
+
+.gallery-controls-previous::before {
+    border: solid #000;
+    border-width: 0 5px 5px 0;
+    content: '';
+    display: inline-block;
+    height: 5px;
+    left: -30px;
+    padding: 10px;
+    position: absolute;
+    top: 25%;
+    transform:  rotate(135deg) translateY(-50%);
+    transition: left 0.15s ease-in-out;
+    width: 5px;
+}
+.gallery-controls-previous:hover::before {
+    left: -40px;
+}
+.gallery-controls-next {
+    position: relative;
+}
+.gallery-controls-next::before {
+    border: solid #000;
+    border-width: 0 5px 5px 0;
+    content: '';
+    display: inline-block;
+    height: 5px;
+    padding: 10px;
+    position: absolute;
+    right: -30px;
+    top: 43px;
+    transform: rotate(-45deg) translateY(-50%);
+    transition: right 0.15s ease-in-out;
+    width: 5px;
+}
+.gallery-controls-next:hover::before {
+    right: -40px;
+}
+
+.gallery-nav {
+    bottom: -15px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    position: absolute;
+    width: 100%;
+}
+.gallery nav li {
+    background: #ccc;
+    border-radius: 50%;
+    height: 10px;
+    margin: 0 16px;
+    width: 10px;
+}
+
+.gallery-nav li.gallery-item-selected {
+    background: #555;
+}
+.gallery-container,
+.gallery-item {
+    border: none; 
+}
+button {
+    border: none; 
+    background: none; 
+}

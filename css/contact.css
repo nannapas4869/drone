@@ -22,7 +22,8 @@
     z-index: 2;
     position: relative;
     margin-top: 5rem;
-}@media (max-width: 1358px){
+}
+@media (max-width: 1358px){
     .hamburger-menu-container{
         display: flex;
     }
@@ -152,10 +153,10 @@ p {
     padding: 2rem !important;
 }
 .image__width {
-    width: 86.4px;
+    width: 86.4px; 
 }
-.col-lg-4 {
-    margin-top: 2rem;
+.margin__align {
+    margin-top: 2rem !important;
 }
 .custom__input__block {
     margin-top: 5rem;

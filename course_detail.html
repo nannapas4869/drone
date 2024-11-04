@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./fontawesome/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/faq.css">
+    <link rel="stylesheet" href="/css/course_detail.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Drone Project</title>
+</head>
+<body>
+    <header>
+        <div class="container-custom">
+            <input type="checkbox" name="" id="check">
+            
+            <div class="logo-container">
+                <img src="/images/PDRC-logo.svg" alt="logo" width="40">
+            </div>
+
+            <div class="nav-btn">
+                <div class="nav-links">
+                    <ul>
+                        <li class="nav-link" style="--i: .6s">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="nav-link" style="--i: .85s">
+                            <a href="course.html" class="active">Course</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                       <a href="#"> <img src="/images/reactangle.png" alt="rectangle" width="10" class="rectangle__image"> Drone Pilot for Beginner</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#"> <img src="/images/reactangle.png" alt="rectangle" width="10" class="rectangle__image"> Drone Pilot for Professional</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#"><img src="/images/reactangle.png" alt="rectangle" width="10" class="rectangle__image"> Inspection for Infrared Thermography</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#"><img src="/images/reactangle.png" alt="rectangle" width="10" class="rectangle__image"> Customized Course Training</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#"><img src="/images/reactangle.png" alt="rectangle" width="10" class="rectangle__image"> Free Course Training</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.1s">
+                            <a href="#">Activities</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="#">Knowledge Sharing</a>
+                            <div class="dropdown-2">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="knowledge_sharing.html"><img src="/images/reactangle.png" alt="rectangle" width="10" class="rectangle__image"> บทความ</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="promo_document.html" id="promo-docs-link"><img src="/images/reactangle.png" alt="rectangle" width="10" class="rectangle__image">เอกสารประชาสัมพันธ์ </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="faq.html">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="log-sign" style="--i: 1.8s">
+                    <a href="#" class="login__button">Log in</a>
+                    <a href="#" class="signup__button">Sign up</a>
+                </div>
+            </div>
+
+            <div class="hamburger-menu-container">
+                <div class="hamburger-menu">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-8">
+                <p class="title__main">หลักสูตร นักบินโดรน ขั้นพื้นฐาน (Drone for Beginners)</p>
+                <div class="d-flex flex-row">
+                    <div>
+                        <img src="/images/teacher.png" alt="teacher" class="mt-3">
+                    </div>
+                    <div class="teacher__name">
+                        <p class="teacher__text" style="font-weight: 600;">ผู้สอน</p>
+                        <p class="teacher__text">จักรกฤษณ์ อุปยโส</p>
+                    </div>
+                    <div class="vertical__line"></div>
+                    <div class="teacher__name">
+                        <p class="teacher__text" style="font-weight: 600;">Categories:</p>
+                        <p class="teacher__text">กลุ่ม ผู้เริ่มต้น (Beginners)</p>
+                    </div>
+                </div>
+                <img src="/images/drone__banner__2.png" alt="drone__banner" width="100%" class="mt-3">
+                
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="price__detail">
+                    <p class="price">5,500.-</p>
+                    <button class="register__link"><a href="#">ลงทะเบียนคอร์สนี้</a></button>
+                    <button class="cart__link"><a href="#"><img src="/images/cart.png" alt="cart">&nbsp;&nbsp; เพิ่มลงในตะกร้า</a></button>
+                    <div class="line__cart"></div>
+                    <p class="course__detail">ข้อมูลคอร์สเรียน</p>
+                    <div class="container">
+                        <div class="row p-2">
+                            <div class="col-md-6">
+                                <img src="/images/duration.png" alt="duration">
+                                <span>&nbsp;&nbsp;Duration</span>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="text__align">1 day</p>
+                            </div>
+                        </div>
+                        <div class="row p-2">
+                            <div class="col-md-6">
+                                <img src="/images/bell.png" alt="bell">
+                                <span>&nbsp;&nbsp;Lectures</span>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="text__align">10</p>
+                            </div>
+                        </div>
+                        <div class="row p-2">
+                            <div class="col-md-6">
+                                <img src="/images/quiz.png" alt="quiz">
+                                <span>&nbsp;&nbsp;Quizzes</span>
+                            </div>
+                            <div class="col-md-6">
+                                <p class="text__align">3</p>
+                            </div>
+                        </div>
+                        <div class="row p-2">
+                            <div class="col-md-8">
+                                <img src="/images/like.png" alt="like">
+                                <span>&nbsp;&nbsp;Pass Percentage</span>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="text__align">60</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line__cart"></div>
+                    <p class="certificate__align">Certification</p>
+                    <p class="certificate__align__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard</p>
+                    <img src="/images/certificate.png" alt="certificate" class="certificate__image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay-container mt-5">
+        
+        <div class="overlay-image-text">
+            <p><strong>หลักสูตร “นักบินโดรนขั้นพื้นฐานสำหรับผู้เริ่มต้น  (Drone for Beginner)”  </strong>ได้พัฒนาระบบการเรียนการสอนมุ่งเน้นความรู้ความเข้าใจเกี่ยวกับกฎหมาย ข้อบังคับ และหลักการเดินอากาศ  รวมถึงการใช้ห้วงอากาศ สร้างพื้นฐานความรู้ความเข้าใจที่ถูกต้องทั้งภาคทฤษฎีและภาคปฏิบัติ เพื่อให้สามารถใช้งานระบบ UAS (Unmanned Aircraft System)                หรือการบินโดรน (Drone) ภายในประเทศให้มีมาตรฐานมีประสิทธิภาพการบินที่ถูกต้องตามกฎหมาย มีความรู้ด้านความปลอดภัยในการบินและการบำรุงรักษาอากาศยานไร้คนขับเบื้องต้น                     เน้นให้มีทักษะ มีความรู้ ความเข้าใจในการบังคับควบคุมโดรนเบื้องต้นในท่าทางที่กำหนดตามมาตรฐานสากล และดำเนินการบินตามขั้นตอนปฏิบัติพื้นฐาน อีกทั้งมีความรู้เรื่อง การใช้ห้วงอากาศ                ร่วมกับผู้อื่น มีความสามารถในการประเมินสภาพอากาศตามหลักอุตุนิยมวิทยาก่อนทำการบิน มีการตรวจสอบตัวเองและผู้ปฏิบัติงานร่วมในด้านความพร้อมสมรรถนะร่างกายก่อนทำการบินโดรน มีความระแวดระวังและการตระหนักรู้เพื่อป้องกันอันตรายจากการบินโดรน มีความรู้เรื่องแผนรับมือต่อสถานการณ์ฉุกเฉินเมื่อเกิดอุบัติเหตุจากโดรน สามารถเข้าใจค่าพารามิเตอร์ของโดรน และตั้งค่าได้อย่างถูกต้อง มีความเข้าใจสมรรถนะของโดรน รวมถึงเทคนิคการบินโดรนให้ปลอดภัย ถูกต้องตามกฎหมายที่สำนักงานการบินพลเรือน (กพท.) กำหนดไว้</p>
+        </div>
+    </div>
+    <p class="advantage">คอร์สนี้คุณจะได้เรียนอะไรบ้าง?</p>
+    <div class="container advantage__margin__align">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="advantage__first">
+                    <div>
+                       <img src="/images/correct.png" alt="correct"> 
+                    </div>
+                    <p class="advantage__first__text">การฝึกอบรมความรู้ทางทฤษฎี (Theoretical Knowledge Instruction)
+                        จำนวน 1 วัน</p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="advantage__second">
+                    <div>
+                       <img src="/images/correct.png" alt="correct"> 
+                    </div>
+                    <div>
+                        <p class="advantage__second__text">การฝึกภาคปฏิบัติ (Practical Training) จำนวน 1 วัน </p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="/images/organization.png" alt="organization" width="100%">
+    <div class="detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 course__text">รายละเอียดคอร์สเรียน</div>
+                <div class="col-md-12 course__text__2">คอร์สนี้เหมาะกับใคร</div>
+                <div class="col-md-12">
+                    <ul class="unorder">
+                        <li>บุคคลทั่วไป ชาย/หญิง อายุ 18 ปี ขึ้นไป</li>
+                        <li>สุขภาพกายและสุขภาพจิตดี / ต้องไม่เป็นผู้ตาบอดสี</li>
+                    </ul>
+                </div>
+                <div class="col-md-12 course__text__2">ประโยชน์ที่จะได้รับจากคอร์สเรียนนี้</div>
+                <div class="col-md-12">
+                    <ul class="unorder">
+                        <li>ได้เรียนรู้ทฤษฎีและสามารถบังคับอากาศยานไร้คนขับอย่างปลอดภัยและถูกวิธี</li>
+                        <li>ได้รับทราบและเข้าใจถึงกฎหมาย ระเบียบ และข้อกำหนดต่างๆ ในการบังคับอากาศยานไร้คนขับ</li>
+                        <li>มีความมั่นใจในการใช้งานเทคโนโลยีอากาศยานไร้คนขับและเครื่องมือต่างๆ เพื่อพัฒนาต่อยอดในอนาคต</li>
+                        <li>ได้รับประกาศนียบัตร นักบินโดรน ขั้นพื้นฐานสำหรับผู้เริ่มต้น รุ่นที่ 1</li>
+                    </ul>
+                </div>
+                <div class="col-md-12 course__text__2">โดรนที่ใช้ในการสอน</div>
+                <div class="col-md-12">
+                    <ul class="unorder">
+                        <li>DJI Mavic 3 Enterprise</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 lecture">รายละเอียดบทเรียน</div>
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="question__block mt-2">
+                    <i class="ri-arrow-down-s-line plus__icon" id="pi_1"></i>
+                    <i class="ri-arrow-up-s-line subtract__icon" id="si_1"></i>
+                    <span class="question__text">การฝึกอบรมความรู้ทางทฤษฎี (Theoretical Knowledge Instruction) จำนวน 1 วัน </span>
+                </div>
+                <div class="answer__block" id="ab_1">
+                    <span class="answer__text">
+                        ภาคทฤษฎี/ภาคจำลอง Simulator จำนวน 1 วัน
+                        <ol>
+                            <li>เกี่ยวกับการทำการบินอย่างปลอดภัย</li>
+                            <li>กฎหมายว่าด้วยอากาศยานซึ่งไม่มีนักบิน</li>
+                            <li>แผนที่ และการเดินอากาศ</li>
+                            <li>ความรู้เกี่ยวกับปฏิบัติการบินตามหลักเกณฑ์ที่กำหนด และลำดับขั้นตอนที่สำคัญทั้งก่อนและหลังปฏิบัติการบิน</li>
+                            <li>ห้วงอากาศ/อุตุนิยมวิทยาการบิน</li>
+                            <li>แผนตอบสนองต่อภาวะฉุกเฉิน</li>
+                        </ol>
+                    </span>
+                </div>
+                <div class="question__block mt-3">
+                    <i class="ri-arrow-down-s-line plus__icon" id="pi_2"></i>
+                    <i class="ri-arrow-up-s-line subtract__icon" id="si_2"></i>
+                    <span class="question__text">จำเป็นต้องมีพื้นฐานการบินโดรนมาก่อนหรือไม่?</span>
+                </div>
+                <div class="answer__block mb-5" id="ab_2">
+                    <span class="answer__text">
+                        การเตรียมการขั้นตอนปฏิบัติการบินเบื้องต้น
+                        <br>
+                        ขั้นตอนปฏิบัติในการ Pre Flight, In-Flight, Post Flight ดังนี้ 
+                        <ol>
+                            <li>ก่อนทำการบิน</li>
+                            <li>การวิ่งขึ้น</li>
+                            <li>การปฏิบัติการทั่วไปหรือการบังคับพื้นฐาน</li>
+                            <li>ขั้นตอนปฏิบัติกรณีฉุกเฉิน</li>
+                            <li>การประสานงานและความปลอดภัยการบิน</li>
+                            <li>การดำเนินการหลังทำการบิน</li>
+                        </ol>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p class="learn">ภาพบรรยากาศ การเรียน การสอน</p>
+    <div class="d-flex flex-row gap-2 mt-5 mb-5">
+        <div class="d-flex flex-column gap-2">
+            <div>
+                <img src="/images/1.png" alt="1" width="100%">
+            </div>
+            <div class="d-flex flex-row gap-2">
+                <div>
+                    <img src="/images/2.png" alt="2" width="100%">
+                </div>
+                <div>
+                    <img src="/images/3.png" alt="3" width="100%">
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="/images/4.png" alt="4" width="100%">
+        </div>
+    </div>
+    <div class="body__container">
+        <div class="gallery">
+            <div class="gallery-container">
+                <img src="/images/5.png" alt="1" class="gallery-item gallery-item-1" data-index="1">
+                <img src="/images/6.png" alt="2" class="gallery-item gallery-item-2" data-index="2">
+                <img src="/images/7.png" alt="3" class="gallery-item gallery-item-3" data-index="3">
+                <img src="/images/8.png" alt="4" class="gallery-item gallery-item-4" data-index="4">
+                <img src="/images/9.png" alt="5" class="gallery-item gallery-item-5" data-index="5">
+            </div>
+            <div class="gallery-controls">
+    
+            </div>
+        </div>
+    </div>
+    <script src="/js/course.js"></script>
+    <script src="/js/faq.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

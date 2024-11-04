@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./fontawesome/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/course.css" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Drone Project</title>
+</head>
+<body>
+    <header>
+        <div class="container-custom">
+            <input type="checkbox" name="" id="check">
+            
+            <div class="logo-container">
+                <img src="/images/PDRC-logo.svg" alt="logo" width="40">
+            </div>
+
+            <div class="nav-btn">
+                <div class="nav-links">
+                    <ul>
+                        <li class="nav-link" style="--i: .6s">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="nav-link" style="--i: .85s">
+                            <a href="#" class="active">Course</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                       <a href="#beginner"> <img src="/images/reactangle.png" alt="rectangle" width="10" class="rectangle__image"> กลุ่ม ผู้เริ่มต้น (Beginner)</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#professional"> <img src="/images/reactangle.png" alt="rectangle" width="10" class="rectangle__image"> กลุ่ม นักบินโดรน เพื่องานถ่ายภาพและวิดีโอ ระดับมืออาชีพ (Professional)</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#specialist"><img src="/images/reactangle.png" alt="rectangle" width="10" class="rectangle__image"> กลุ่ม นักบินโดรน วิชาชีพเฉพาะทาง (Specialist)</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#license"><img src="/images/reactangle.png" alt="rectangle" width="10" class="rectangle__image"> กลุ่ม นักบินโดรน รับรองใบอนุญาตตามกฎหมาย (License)</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#cert"><img src="/images/reactangle.png" alt="rectangle" width="10" class="rectangle__image"> กลุ่ม ผู้ตรวจสอบ (Certificate)</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.1s">
+                            <a href="#">Activities</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="knowledge_sharing.html">Knowledge Sharing</a>
+                            <div class="dropdown-2">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="knowledge_sharing.html"><img src="/images/reactangle.png" alt="rectangle" width="10" class="rectangle__image"> บทความ</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="promo_document.html" id="promo-docs-link"><img src="/images/reactangle.png" alt="rectangle" width="10" class="rectangle__image">เอกสารประชาสัมพันธ์ </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="faq.html">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="log-sign" style="--i: 1.8s">
+                    <a href="#" class="login__button">Log in</a>
+                    <a href="#" class="signup__button">Sign up</a>
+                </div>
+            </div>
+
+            <div class="hamburger-menu-container">
+                <div class="hamburger-menu">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="ticker-wrapper">
+        <div class="text-update">
+            <p>มุ่นเน้นทักษะ (Skill) พัฒนาความรู้ (knowledge) มุ่งสู่มาตรฐาน (Standard) บริหารความเสี่ยง (Risk
+                Management) ลดเลี่ยงอุบัติเหตุ อุบัติการณ์ (Reduce Accident and Incident) สร้างรากฐานวิชาชีพ
+                “นักบินโดรน” (Drone Professional)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;มุ่นเน้นทักษะ (Skill) พัฒนาความรู้
+                (knowledge) มุ่งสู่มาตรฐาน (Standard) บริหารความเสี่ยง (Risk Management) ลดเลี่ยงอุบัติเหตุ อุบัติการณ์
+                (Reduce Accident and Incident) สร้างรากฐานวิชาชีพ “นักบินโดรน” (Drone Professional)
+            </p>
+        </div>
+    </div>
+    <div>
+        <img src="/images/course__banner.png" alt="course__banner" width="100%">
+    </div>
+    <div class="container">
+        <div class="row" id="beginner">
+            <div class="col-sm-12 col-md-12 col-lg-12 course__title">
+                กลุ่ม ผู้เริ่มต้น (Beginner)
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="course__box">
+                    <img src="/images/drone_beginner.png" alt="drone_beginner" width="100%">
+                    <p class="course__text">หลักสูตร นักบินโดรน ขั้นพื้นฐาน (Drone for Beginners)</p>
+                    <div class="bottom__line"></div>
+                    <div class="d-flex gap-2">
+                        <div class="flex__price__button">
+                            <div class="price__button">
+                                5,500.-
+                            </div>
+                        </div>
+                        <div class="flex__course__detail__button">
+                            <div class="course__detail__button">
+                               <a href="course_detail.html">course detail</a> 
+                            </div>
+                        </div>
+                        <div class="flex__register__button">
+                            <div class="register__button">
+                                <a href="#">register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="course__box">
+                    <img src="/images/drone_beginner.png" alt="drone_beginner" width="100%">
+                    <p class="course__text">หลักสูตร นักบินโดรน FPV ขั้นพื้นฐาน (FPV Drone for Beginners)</p>
+                    <div class="bottom__line"></div>
+                    <div class="d-flex gap-2">
+                        <div class="flex__price__button">
+                            <div class="price__button">
+                                25,000.-
+                            </div>
+                        </div>
+                        <div class="flex__course__detail__button">
+                            <div class="course__detail__button">
+                               <a href="#">course detail</a> 
+                            </div>
+                        </div>
+                        <div class="flex__register__button">
+                            <div class="register__button">
+                                <a href="#">register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="course__box">
+                    <img src="/images/drone_beginner.png" alt="drone_beginner" width="100%">
+                    <p class="course__text">หลักสูตร นักบินโดรน เพื่องานถ่ายภาพและวิดีโอ ขั้นพื้นฐาน
+                        (Drone Photography for Beginners)</p>
+                    <div class="bottom__line"></div>
+                    <div class="d-flex gap-2">
+                        <div class="flex__price__button">
+                            <div class="price__button">
+                                5,500.-
+                            </div>
+                        </div>
+                        <div class="flex__course__detail__button">
+                            <div class="course__detail__button">
+                               <a href="#">course detail</a> 
+                            </div>
+                        </div>
+                        <div class="flex__register__button">
+                            <div class="register__button">
+                                <a href="#">register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="course__box">
+                    <img src="/images/drone_beginner.png" alt="drone_beginner" width="100%">
+                    <p class="course__text">หลักสูตร พื้นฐานการควบคุมบังคับ โรโบติกส์ 
+                        Unitree G02 (Command and Control Unitree Go2 for Beginner)</p>
+                    <div class="bottom__line"></div>
+                    <div class="d-flex gap-2">
+                        <div class="flex__price__button">
+                            <div class="price__button">
+                                5,500.-
+                            </div>
+                        </div>
+                        <div class="flex__course__detail__button">
+                            <div class="course__detail__button">
+                               <a href="#">course detail</a> 
+                            </div>
+                        </div>
+                        <div class="flex__register__button">
+                            <div class="register__button">
+                                <a href="#">register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="course__box">
+                    <img src="/images/drone_beginner.png" alt="drone_beginner" width="100%">
+                    <p class="course__text">หลักสูตร พื้นฐานการควบคุมหุ่นยนต์ Humanoid
+                        (Command and Control Humanoid for Beginner)</p>
+                    <div class="bottom__line"></div>
+                    <div class="d-flex gap-2">
+                        <div class="flex__price__button">
+                            <div class="price__button">
+                                25,000.-
+                            </div>
+                        </div>
+                        <div class="flex__course__detail__button">
+                            <div class="course__detail__button">
+                               <a href="#">course detail</a> 
+                            </div>
+                        </div>
+                        <div class="flex__register__button">
+                            <div class="register__button">
+                                <a href="#">register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="container">
+        <div class="row" id="professional">
+            <div class="col-sm-12 col-md-12 col-lg-12 course__title">
+                กลุ่ม นักบินโดรน เพื่องานถ่ายภาพและวิดีโอ ระดับมืออาชีพ (Professional)
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="course__box">
+                    <img src="/images/course_2.png" alt="course_2" width="100%">
+                    <p class="course__text">หลักสูตร นักบินโดรน เพื่องานถ่ายภาพและวีดีโอ ระดับมืออาชีพ (Professional Drone Photography)</p>
+                    <div class="bottom__line"></div>
+                    <div class="d-flex gap-2">
+                        <div class="flex__price__button">
+                            <div class="price__button">
+                                25,000.-
+                            </div>
+                        </div>
+                        <div class="flex__course__detail__button">
+                            <div class="course__detail__button">
+                               <a href="#">course detail</a> 
+                            </div>
+                        </div>
+                        <div class="flex__register__button">
+                            <div class="register__button">
+                                <a href="#">register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="course__box">
+                    <img src="/images/course_2.png" alt="course_2" width="100%">
+                    <p class="course__text">หลักสูตร นักบินโดรน FPV เพื่องานถ่ายภาพและวีดีโอ ระดับมืออาชีพ (Professional FPV Drone Pilot)</p>
+                    <div class="bottom__line"></div>
+                    <div class="d-flex gap-2">
+                        <div class="flex__price__button">
+                            <div class="price__button">
+                                25,000.-
+                            </div>
+                        </div>
+                        <div class="flex__course__detail__button">
+                            <div class="course__detail__button">
+                               <a href="#">course detail</a> 
+                            </div>
+                        </div>
+                        <div class="flex__register__button">
+                            <div class="register__button">
+                                <a href="#">register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="container">
+        <div class="row" id="specialist">
+            <div class="col-sm-12 col-md-12 col-lg-12 course__title">
+                กลุ่ม นักบินโดรน วิชาชีพเฉพาะทาง (Specialist)
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="course__box">
+                    <img src="/images/course_2.png" alt="course_2" width="100%">
+                    <p class="course__text">หลักสูตร นักบินโดรน ตรวจสอบแผงโซล่าเซลล์ (Drone for Solar PV Inspection)</p>
+                    <div class="bottom__line"></div>
+                    <div class="d-flex gap-2">
+                        <div class="flex__price__button">
+                            <div class="price__button">
+                                25,000.-
+                            </div>
+                        </div>
+                        <div class="flex__course__detail__button">
+                            <div class="course__detail__button">
+                               <a href="#">course detail</a> 
+                            </div>
+                        </div>
+                        <div class="flex__register__button">
+                            <div class="register__button">
+                                <a href="#">register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="course__box">
+                    <img src="/images/course_3.png" alt="course_3" width="100%">
+                    <p class="course__text">หลักสูตร นักบินโดรน ถ่ายภาพความร้อน ระดับ 1 (Drone Level 1nfrared Thermography)</p>
+                    <div class="bottom__line"></div>
+                    <div class="d-flex gap-2">
+                        <div class="flex__price__button">
+                            <div class="price__button">
+                                25,000.-
+                            </div>
+                        </div>
+                        <div class="flex__course__detail__button">
+                            <div class="course__detail__button">
+                               <a href="#">course detail</a> 
+                            </div>
+                        </div>
+                        <div class="flex__register__button">
+                            <div class="register__button">
+                                <a href="#">register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="course__box">
+                    <img src="/images/course_2.png" alt="course_2" width="100%">
+                    <p class="course__text">หลักสูตร นักบินโดรน กู้ภัยและค้นหา 101 
+                        (Drone Search and Rescue 101)</p>
+                    <div class="bottom__line"></div>
+                    <div class="d-flex gap-2">
+                        <div class="flex__price__button">
+                            <div class="price__button">
+                                25,000.-
+                            </div>
+                        </div>
+                        <div class="flex__course__detail__button">
+                            <div class="course__detail__button">
+                               <a href="#">course detail</a> 
+                            </div>
+                        </div>
+                        <div class="flex__register__button">
+                            <div class="register__button">
+                                <a href="#">register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="course__box">
+                    <img src="/images/course_4.png" alt="course_4" width="100%">
+                    <p class="course__text">หลักสูตร นักบินโดรน LIDAR งานสำรวจและรังวัด (Drone for Surveying and Mapping with
+                        LiDAR Technology)</p>
+                    <div class="bottom__line"></div>
+                    <div class="d-flex gap-2">
+                        <div class="flex__price__button">
+                            <div class="price__button">
+                                25,000.-
+                            </div>
+                        </div>
+                        <div class="flex__course__detail__button">
+                            <div class="course__detail__button">
+                               <a href="#">course detail</a> 
+                            </div>
+                        </div>
+                        <div class="flex__register__button">
+                            <div class="register__button">
+                                <a href="#">register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="course__box">
+                    <img src="/images/course_5.png" alt="course_5" width="100%">
+                    <p class="course__text">หลักสูตร นักบินโดรน สร้างภาพ 3 มิติ (Drone 3D Modeling Photogrammetry)</p>
+                    <div class="bottom__line"></div>
+                    <div class="d-flex gap-2">
+                        <div class="flex__price__button">
+                            <div class="price__button">
+                                25,000.-
+                            </div>
+                        </div>
+                        <div class="flex__course__detail__button">
+                            <div class="course__detail__button">
+                               <a href="#">course detail</a> 
+                            </div>
+                        </div>
+                        <div class="flex__register__button">
+                            <div class="register__button">
+                                <a href="#">register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="course__box">
+                    <img src="/images/course_2.png" alt="course_2" width="100%">
+                    <p class="course__text">หลักสูตร นักบินโดรน งานสำรวจ รังวัดและแผนที่ทางอากาศ 
+                        (Drone Pilot for Surveying and Mapping)</p>
+                    <div class="bottom__line"></div>
+                    <div class="d-flex gap-2">
+                        <div class="flex__price__button">
+                            <div class="price__button">
+                                25,000.-
+                            </div>
+                        </div>
+                        <div class="flex__course__detail__button">
+                            <div class="course__detail__button">
+                               <a href="#">course detail</a> 
+                            </div>
+                        </div>
+                        <div class="flex__register__button">
+                            <div class="register__button">
+                                <a href="#">register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="container">
+        <div class="row" id="license">
+            <div class="col-sm-12 col-md-12 col-lg-12 course__title">
+                กลุ่ม นักบินโดรน รับรองใบอนุญาตตามกฎหมาย (License)
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="course__box">
+                    <img src="/images/course_2.png" alt="course_2" width="100%">
+                    <p class="course__text">RVC น้ำหนักน้อยกว่า 25 kg.</p>
+                    <div class="bottom__line"></div>
+                    <div class="d-flex gap-2">
+                        <div class="flex__price__button">
+                            <div class="price__button">
+                                25,000.-
+                            </div>
+                        </div>
+                        <div class="flex__course__detail__button">
+                            <div class="course__detail__button">
+                               <a href="#">course detail</a> 
+                            </div>
+                        </div>
+                        <div class="flex__register__button">
+                            <div class="register__button">
+                                <a href="#">register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="course__box">
+                    <img src="/images/course_2.png" alt="course_2" width="100%">
+                    <p class="course__text">RVC น้ำหนักมากกว่า 25 kg.</p>
+                    <div class="bottom__line"></div>
+                    <div class="d-flex gap-2">
+                        <div class="flex__price__button">
+                            <div class="price__button">
+                                25,000.-
+                            </div>
+                        </div>
+                        <div class="flex__course__detail__button">
+                            <div class="course__detail__button">
+                               <a href="#">course detail</a> 
+                            </div>
+                        </div>
+                        <div class="flex__register__button">
+                            <div class="register__button">
+                                <a href="#">register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="line"></div>
+    <div class="container">
+        <div class="row" id="cert">
+            <div class="col-sm-12 col-md-12 col-lg-12 course__title">
+                กลุ่ม ผู้ตรวจสอบ (Certificate)            
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="course__box">
+                    <img src="/images/thermo1.png" alt="thermo1" width="100%">
+                    <p class="course__text">หลักสูตร ผู้ตรวจภาพความร้อน ระดับ 1 
+                        (Certify Level 1Infrared Thermography)</p>
+                    <div class="bottom__line"></div>
+                    <div class="d-flex gap-2">
+                        <div class="flex__price__button">
+                            <div class="price__button">
+                                25,000.-
+                            </div>
+                        </div>
+                        <div class="flex__course__detail__button">
+                            <div class="course__detail__button">
+                               <a href="#">course detail</a> 
+                            </div>
+                        </div>
+                        <div class="flex__register__button">
+                            <div class="register__button">
+                                <a href="#">register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="course__box">
+                    <img src="/images/thermo2.png" alt="thermo2" width="100%">
+                    <p class="course__text">หลักสูตร ผู้ตรวจภาพความร้อน ระดับ 2 
+                        (Certify Level 2 Infrared Thermography)</p>
+                    <div class="bottom__line"></div>
+                    <div class="d-flex gap-2">
+                        <div class="flex__price__button">
+                            <div class="price__button">
+                                25,000.-
+                            </div>
+                        </div>
+                        <div class="flex__course__detail__button">
+                            <div class="course__detail__button">
+                               <a href="#">course detail</a> 
+                            </div>
+                        </div>
+                        <div class="flex__register__button">
+                            <div class="register__button">
+                                <a href="#">register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="course__box">
+                    <img src="/images/thermo3.png" alt="thermo3" width="100%">
+                    <p class="course__text">หลักสูตร ผู้ตรวจภาพความร้อน ระดับ 3 
+                        (Certify Level 3 Infrared Thermography)</p>
+                    <div class="bottom__line"></div>
+                    <div class="d-flex gap-2">
+                        <div class="flex__price__button">
+                            <div class="price__button">
+                                25,000.-
+                            </div>
+                        </div>
+                        <div class="flex__course__detail__button">
+                            <div class="course__detail__button">
+                               <a href="#">course detail</a> 
+                            </div>
+                        </div>
+                        <div class="flex__register__button">
+                            <div class="register__button">
+                                <a href="#">register</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer__block">
+        <p class="footer__text">Footer</p>
+    </div>
+</body>
+</html>
