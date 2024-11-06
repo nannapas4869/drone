@@ -12,21 +12,6 @@ menuLinks.forEach(link => {
   });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const promoDocsLink = document.getElementById('promo-docs-link');
-
-    // Simulate login status
-    let isLoggedIn = false; // Change this based on your actual login check logic
-
-    if (!isLoggedIn) {
-        promoDocsLink.style.display = 'none'; // Hide the link if not logged in
-    } else {
-        promoDocsLink.style.display = 'block'; // Show the link if logged in
-    }
-
-    // Add your login check logic to update `isLoggedIn` dynamically
-})
-
 // Get the modal, button, and close elements
 const modal = document.getElementById("readMoreModal");
 const readMoreBtn = document.querySelector(".read-more-btn");

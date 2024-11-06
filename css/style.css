@@ -193,7 +193,9 @@ section{
 
 .active {
   font-weight: bold;
-
+}
+.dropdown-link a.active {
+    font-weight: bold; 
 }
 ul .nav-link a:hover {
   font-weight: bold;
