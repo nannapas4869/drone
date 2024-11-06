@@ -138,7 +138,10 @@ label.form-check-label {
         margin-top: 3.4rem;
         font-size: 13px;
     }
-    .input-group-lg>.form-control {
+    .input-group-lg >.form-control {
         font-size: 1rem;
+    }
+    .margin__bottom__align {
+        margin-bottom: 5rem;
     }
 }
