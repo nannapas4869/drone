@@ -70,7 +70,7 @@
     margin-left: 2rem;
 }
 .text__align {
-    text-align: right
+    text-align:right;
 }
 .certificate__align {
     text-align: center;
@@ -83,7 +83,7 @@
 }
 .certificate__image {
     display: block;
-    margin: 0 auto 3rem auto;
+    margin: 1rem auto 3rem auto;
 }
 .overlay-container {
     position: relative;
@@ -106,10 +106,10 @@
 
 .advantage {
     margin-top: 5rem;
-    margin-left: 7rem;
+    
     margin-bottom: 4rem !important;
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 600;
 }
 .advantage__first {
     background-color: white;
@@ -333,4 +333,218 @@
 button {
     border: none; 
     background: none; 
+}
+
+@media screen and (max-width: 1399px) {
+    .register__link {
+        padding: 1rem 4rem;
+    }
+    .cart__link {
+        padding: 0.35rem 2.5rem;
+    }
+}
+@media screen and (max-width: 1030px) {
+    .gallery-item-5 {
+        left: 78%;
+    }
+    .gallery-item-1 {
+        left: 22%;
+    }
+    .gallery-item-2 {
+        left: 36%;
+    }
+    .gallery-item-4 {
+        left: 64%;
+    }
+    .overlay-image-text {
+        padding: 2rem 7rem 10rem  7rem;
+    }
+    .question__text {
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .register__link {
+        padding: 1rem 15rem;
+    }
+    .cart__link {
+        padding: 0.35rem 13.5rem;
+    }
+    .advantage__second {
+        margin-top: 2rem;
+    }
+    .question__text {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 976px) {
+    .gallery-item-5 {
+        left: 73%;
+    }
+    .gallery-item-1 {
+        left: 27%;
+    }
+    .gallery-item-2 {
+        left: 39%;
+    }
+    .gallery-item-4 {
+        left: 61%;
+    }
+    .overlay-image-text {
+        padding: 2rem 5rem 10rem  5rem;
+    }
+    .question__text {
+        font-size: 16px;
+    }
+  
+}
+@media screen and (max-width: 767px) {
+    .title__main {
+        font-size: 21px;
+    }
+    .teacher__width {
+        width: 90%;
+    }
+    .teacher__name {
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+    .register__link {
+        padding: 1rem 10rem;
+    }
+    .cart__link {
+        padding: 0.35rem 8.5rem;
+    }
+    .overlay-image-text { 
+        font-size: 17px;
+        padding: 0 5rem 10rem 5rem;
+    }
+    .question__text {
+        font-size: 14px;
+    }
+    .gallery-item-5 {
+        left: 67%;
+    }
+    .gallery-item-1 {
+        left: 34%;
+    }
+    .gallery-item-2 {
+        left: 45%;
+    }
+    .gallery-item-4 {
+        left: 55%;
+    }
+    .gallery-item-3 {
+        height: 255px;
+        width: 355px;
+    }
+}
+@media screen and (max-width:575px) {
+    .overlay-image-text {
+        font-size: 15px;
+    }
+    .course__text  {
+        font-size: 25px;
+    }
+    .question__text {
+        font-size: 12px;
+    }
+    .advantage {
+        font-size: 25px;
+    }
+    .advantage__first__text, .advantage__fourth__text {
+        font-size: 14px;
+        padding-top: 0.7rem;
+    }
+    .advantage__second__text, .advantage__third__text {
+        font-size: 14px;
+        padding-top: 0.3rem;
+    }
+    .lecture {
+        font-size: 25px;
+    }
+    .gallery-item-5 {
+        left: 60%;
+    }
+    .gallery-item-1 {
+        left: 40%;
+    }
+    .gallery-item-2 {
+        left: 45%;
+    }
+    .gallery-item-4 {
+        left: 55%;
+    }
+    .gallery-item-3 {
+        height: 228px;
+        width: 328px;
+    }
+    .gallery-item-2, .gallery-item-4 {
+        height: 197px;
+        width: 340px;
+    }
+}
+@media screen and (max-width: 494px) {
+    .teacher__text {
+        font-size: 14px;
+    }
+    .teacher__width {
+        width: 80%;
+    }
+    .gallery-item-5 {
+        left: 50%;
+    }
+    .gallery-item-1 {
+        left: 50%;
+    }
+    .gallery-item-2 {
+        left: 50%;
+    }
+    .gallery-item-4 {
+        left: 50%;
+    }
+    .gallery-item-3 {
+        height: 228px;
+        width: 328px;
+    }
+    .price {
+        font-size: 35px;
+    }
+    .register__link  {
+        padding: 1rem 7rem;
+    }
+    .cart__link {
+        padding: 0.35rem 5.5rem;
+    }
+    .overlay-image-text {
+        padding: 0 2rem 9rem 2rem;
+        font-size: 13px;
+    }
+    .course__text, .lecture  {
+        font-size: 22px;
+    }
+    .course__text__2 {
+        font-size: 16px;
+    }
+    .question__text  {
+        font-size: 10px;
+    }
+    .register__link {
+        padding: 1rem 5rem;
+    }
+    .cart__link {
+        padding: 0.35rem 3.5rem;
+    }
+    .teacher__text {
+        
+        font-size: 12px;
+    }
+    .learn {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 416px) {
+    .teacher__text {
+        font-size: 11px;
+    }
 }

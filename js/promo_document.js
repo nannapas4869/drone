@@ -1,16 +1,17 @@
-document.getElementById('globalSearch').addEventListener('input', function() {
-    const searchText = this.value.toLowerCase();
-    const labels = document.querySelectorAll('.form-check-label');
+document.getElementById('globalSearch').addEventListener('input', function () {
+    const searchTerm = this.value.toLowerCase();
+    const searchElements = document.querySelectorAll('[data-search]');
 
-    labels.forEach(label => {
-        const labelText = label.textContent.toLowerCase();
-        if (labelText.includes(searchText)) {
-            label.closest('.form-check').style.display = 'block';
+    searchElements.forEach(element => {
+        const text = element.getAttribute('data-search').toLowerCase();
+        if (text.includes(searchTerm)) {
+            element.closest('.row').style.display = ''; // Show matching rows
         } else {
-            label.closest('.form-check').style.display = 'none';
+            element.closest('.row').style.display = 'none'; // Hide non-matching rows
         }
     });
 });
+
 document.addEventListener('DOMContentLoaded', () => {
     const radioButtons = document.querySelectorAll('input[name="document__radio"]');
 

@@ -32,7 +32,7 @@
 }
 
 .flex__price__button, .flex__course__detail__button, .flex__register__button {
-    flex: 1 1 auto;
+    /* flex: 1 1 auto; */
     margin: 5px 0;
     display: flex;
     justify-content: center;
@@ -49,28 +49,30 @@
     text-align: center;
     border-radius: 50px;
     color: #791118;
-    font-size: 15px;
+    font-size: 14px;
 }
 .flex__course__detail__button {
-    flex-basis: 150px;
+    flex-basis: 190px;
+}
+.flex__register__button {
+    flex-basis: 380px;
+}
+.flex__price__button {
+    flex-basis: 186px;
 }
 .course__detail__button {
     border: 1px solid #791118;
     text-align: center;
     border-radius: 50px;
-    font-size: 15px;
-    width: 132px;
+    font-size: 14px;
 }
 .course__detail__button a {
     color: #791118;
 }
-.flex__register__button {
-    flex-basis: 100px;
-}
 .register__button {
     background-color: #791118;
     border-radius: 50px;
-    font-size: 15px;
+    font-size: 14px;
     text-align: center;
 }
 .register__button a {
@@ -93,4 +95,31 @@
     filter: drop-shadow(0px -3px 4px rgba(0,0,0,0.25));
     background-color: white;
     margin-bottom: 0 !important;
+}
+@media screen and (max-width: 1399px){
+    .flex__course__detail__button {
+        flex-basis: 380px;
+    }
+    .flex__price__button {
+        flex-basis: 380px;
+    }
+}
+@media screen and (max-width: 767px){
+    .flex__course__detail__button {
+        flex-basis: 484px;
+    }
+    .flex__price__button {
+        flex-basis: 484px;
+    }
+    .flex__register__button {
+        flex-basis: 484px;
+    }
+    .course__title {
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .course__title {
+        font-size: 22px;
+    }
 }

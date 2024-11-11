@@ -23,21 +23,6 @@ p {
     width: 100%;
     height: 100%;
 }
-.overlay__container__promo {
-    max-width: 100%;
-    height: 100%;
-
-}
-input[type="radio"] {
-    transform: scale(2);
-    margin-top: 6rem;
-}
-label.form-check-label {
-    margin-top: 5rem;
-    margin-left: 1rem;
-    color: white;
-    font-size: 30px;
-}
 .search__input {
     border-radius: 1000px !important;
     padding: 1rem 2rem 1rem 2rem !important;
@@ -54,23 +39,52 @@ label.form-check-label {
     background-color: white;;
 }
 .margin__bottom__align {
-    margin-bottom: 3rem;
+    margin-bottom: 7rem;
+}
+.white__bg {
+    background-color: white;
+    padding-top: 2rem;
+    border-radius: 0 20px 20px 0;
 }
 
+.article__align {
+    padding-right: 0;
+    padding-left: 0;
+    position: relative;
+    left: 1px;
+}
+.dog__img {
+    border-radius: 20px 0 0 20px;
+}
+.download__button {
+    border: none;
+    background-color: #791118;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+}
+.download__button a {
+    color: white;
+}
+.download__button__align {
+    margin-top: 1.3rem;
+}
+.title_file {
+    font-size: 30px;
+}
+@media screen and (max-width: 1399px) {
+    .download__button__align {
+        margin-top: 0rem;
+    }
+    .title_file {
+        font-size: 25px;
+    }
+}
 @media screen and (max-width: 1358px) {
     .promo__document__block {
         top: 40px;
     }
     .promo__document__text  {
         font-size: 30px;
-    }
-    input[type="radio"] {
-        transform: scale(1.8);
-        margin-top: 5rem;
-    }
-    label.form-check-label {
-        margin-top: 4.2rem;
-        font-size: 27px;
     }
     .footer__text {
         font-size: 26px;
@@ -80,31 +94,42 @@ label.form-check-label {
     .promo__document__text  {
         font-size: 27px;
     }
-    input[type="radio"] {
-        transform: scale(1.6);
-        margin-top: 4.5rem;
-    }
-    label.form-check-label {
-        margin-top: 3.85rem;
-        font-size: 24px;
-    }
     .footer__text {
         font-size: 22px;
     }
+    .title_file {
+        font-size: 20px;
+    }
+    .description {
+        font-size: 14px;
+    }
+    .white__bg {
+        padding-top: 1rem;
+    }
+}
+@media screen and (max-width: 991px) {
+    .dog__img {
+        border-radius: 20px 20px 0 0;
+    }
+    .white__bg {
+        border-radius:0 0 20px 20px;
+    }
+    .download__button__align {
+        margin-top: 0rem;
+        margin-bottom: 0.5rem;
+    }
 }
 @media screen and (max-width: 767px) {
-    label.form-check-label {
-        margin-top: 4.1rem;
-        font-size: 19px;
-    }
     .footer__text {
         font-size: 19px;
     }
-    .container__block {
-        padding: 0 2rem;
-    }
     .footer__block {
         padding: 1rem;
+    }
+}
+@media screen and (max-width: 576px) {
+    .drone__copter {
+        padding: 0 1rem;
     }
 }
 @media screen and (max-width: 475px) {

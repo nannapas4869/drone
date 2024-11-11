@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Frame</title>
+    <style>
+        .image-frame {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid #ccc;
+        }
+        .image-frame img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+        .add-image-button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-frame" id="imageFrame">
+        <img src="https://via.placeholder.com/150" alt="Image 1">
+        <img src="https://via.placeholder.com/150" alt="Image 2">
+        <img src="https://via.placeholder.com/150" alt="Image 3">
+        <img src="https://via.placeholder.com/150" alt="Image 4">
+        <img src="https://via.placeholder.com/150" alt="Image 5">
+        <img src="https://via.placeholder.com/150" alt="Image 6">
+        <img src="https://via.placeholder.com/150" alt="Image 7">
+        <img src="https://via.placeholder.com/150" alt="Image 8">
+    </div>
+
+    <button class="add-image-button" onclick="addImage()">Add New Image</button>
+
+    <script>
+        function addImage() {
+            const imageFrame = document.getElementById("imageFrame");
+            const newImage = document.createElement("img");
+            newImage.src = "https://via.placeholder.com/150";
+            newImage.alt = `Image ${imageFrame.children.length + 1}`;
+            imageFrame.appendChild(newImage);
+        }
+    </script>
+
+</body>
+</html>
