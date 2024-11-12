@@ -103,7 +103,9 @@ section{
   text-align: center;
   margin-right: 0.5rem;
 }
-
+.login__button:hover,.signup__button:hover {
+    color: white;
+}
 .signup__button {
   padding: 6px 0px;
   width: 106px;

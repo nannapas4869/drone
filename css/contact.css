@@ -23,6 +23,10 @@
     position: relative;
     margin-top: 5rem;
 }
+.iframe__width {
+    width: 100%;
+    height: 500px;
+}
 @media (max-width: 1358px){
     .hamburger-menu-container{
         display: flex;

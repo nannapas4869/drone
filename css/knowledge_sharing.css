@@ -50,6 +50,9 @@
 .info__text {
     color: white;
 }
+.info__text:hover {
+    color: white;
+}
 .article__message__title {
     font-size: 25px;
     padding: 1rem 0 0 2rem;

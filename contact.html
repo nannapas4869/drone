@@ -203,27 +203,14 @@
             </div>
         </div>
     </div>
-    <div id="map"></div>
-
-    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  
-    <script>
-      // Initialize the map
-      const map = L.map('map').setView([12.834254009551909, 100.98152917052228], 8); // Bangkok, Thailand
-  
-      // Mapbox satellite tile layer
-      L.tileLayer('https://api.mapbox.com/styles/v1/mapbox/streets-v11/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibmFubmFwYXM0ODY5NjAiLCJhIjoiY20yd3V5bjMxMGI1aTJscHNsNjJ5ZXI5aiJ9.h2W5YX9Xy0xacw5JDaQEBw', {
-        maxZoom: 19,
-        attribution: '© Mapbox © OpenStreetMap',
-        tileSize: 512,
-        zoomOffset: -1
-      }).addTo(map);
-  
-      // Marker example
-      L.marker([12.834254009551909, 100.98152917052228]).addTo(map)
-        .bindPopup('PDRC PATTAYA Drone and Robotics Center')
-        .openPopup();
-    </script>
+    <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.17361458332!2d100.9814679624422!3d12.832055171716965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3102ed0077eb5415%3A0xe96666df605d7a7c!2sPDRC%20(Pattaya%20Drone%20and%20Robotics%20Center!5e0!3m2!1sen!2sth!4v1730964032508!5m2!1sen!2sth"
+    class="iframe__width"
+    style="border: 0"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+  ></iframe>
     <script src="/js/script.js"></script>
     <script src="/js/contact_us.js"></script>
 </body>
