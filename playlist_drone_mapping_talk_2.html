@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./fontawesome/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/playlist.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Drone Project</title>
+</head>
+
+<body>
+    <header>
+        <div class="container-custom">
+            <input type="checkbox" name="" id="check">
+
+            <div class="logo-container">
+                <img src="/images/PDRC-logo.svg" alt="logo" width="40">
+            </div>
+
+            <div class="nav-btn">
+                <div class="nav-links">
+                    <ul>
+                        <li class="nav-link" style="--i: .6s">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="nav-link" style="--i: .85s">
+                            <a href="#">Course</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="course.html"> <img src="/images/reactangle.png" alt="rectangle"
+                                                width="10" class="rectangle__image"> กลุ่ม ผู้เริ่มต้น (Beginner)</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#professional"> <img src="/images/reactangle.png" alt="rectangle"
+                                                width="10" class="rectangle__image"> กลุ่ม นักบินโดรน
+                                            เพื่องานถ่ายภาพและวิดีโอ ระดับมืออาชีพ
+                                            (Professional)</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#specialist"><img src="/images/reactangle.png" alt="rectangle"
+                                                width="10" class="rectangle__image"> กลุ่ม นักบินโดรน วิชาชีพเฉพาะทาง
+                                            (Specialist)</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#license"><img src="/images/reactangle.png" alt="rectangle" width="10"
+                                                class="rectangle__image"> กลุ่ม นักบินโดรน รับรองใบอนุญาตตามกฎหมาย
+                                            (License)</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#cert"><img src="/images/reactangle.png" alt="rectangle" width="10"
+                                                class="rectangle__image"> กลุ่ม ผู้ตรวจสอบ (Certificate)</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.1s">
+                            <a href="#">Activities</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="#" class="active">Knowledge Sharing</a>
+                            <div class="dropdown-2">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="knowledge_sharing.html" class="active"><img
+                                                src="/images/reactangle.png" alt="rectangle" width="10"
+                                                class="rectangle__image"> บทความ</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="promo_document.html" id="promo-docs-link"><img
+                                                src="/images/reactangle.png" alt="rectangle" width="10"
+                                                class="rectangle__image">เอกสารประชาสัมพันธ์ </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="faq.html">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="log-sign" style="--i: 1.8s">
+                    <a href="#" class="login__button">Log in</a>
+                    <a href="#" class="signup__button">Register</a>
+                </div>
+            </div>
+
+            <div class="hamburger-menu-container">
+                <div class="hamburger-menu">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <p class="video__sharing">Video Sharing From Youtube</p>
+        <hr>
+        <div class="row mb-5">
+            <div class="col-12 col-md-12 col-lg-8">
+                <iframe id="video-player"
+                    src="https://www.youtube.com/embed/9LtGo-f-0yg?autoplay=1&mute=0&enablejsapi=1&controls=1&fs=1"
+                    title="Video Player" allow="autoplay; fullscreen" allowfullscreen frameborder="0">
+                </iframe>
+                <p class="video__title">Drone Mapping Talk <span>EP#2</span></p>
+                <p class="video__desc">Lorem ipsum dolor sit amet consectetur. Quam commodo in ornare sed vel lacus
+                    sagittis eu eleifend. Enim adipiscing tortor tristique penatibus enim metus lacus. Rhoncus a magna
+                    sagittis interdum purus platea amet sollicitudin. Vulputate sed ornare nec venenatis.</p>
+            </div>
+            <div class="col-12 col-md-12 col-lg-4">
+                <div class="d-flex flex-row  margin__align__video">
+                    <div class="image__preview">
+                        <a href="playlist_drone_mapping_talk.html">
+                            <img src="/images/banner__9.png" alt="video__2" class="banner__width">
+                        </a>
+                    </div>
+                    <div>
+                         <p class="video__title__small">Drone Mapping Talk <span>EP#1</span></p>
+                    </div>
+                </div>
+                <div class="d-flex flex-row margin__align__top">
+                    <div class="controls">
+                        <button id="play-pause-btn">
+                            <img src="/images/play__button.png" alt="play__icon" id="play-pause-icon">
+                        </button>
+                    </div>
+                    <div class="image__preview">
+                        <a href="playlist_drone_mapping_talk_2.html">
+                            <img src="/images/banner__10.png" alt="video__2" class="banner__width">
+                        </a>
+                    </div>
+                    <div>
+                         <p class="video__title__small">Drone Mapping Talk <span>EP#2</span></p>
+                    </div>
+                </div>
+                <div class="d-flex flex-row margin__align__video">
+                    <div class="image__preview">
+                        <a href="playlist_drone_mapping_talk_3.html">
+                            <img src="/images/banner__11.png" alt="video__2" class="banner__width">
+                        </a>
+                    </div>
+                    <div>
+                         <p class="video__title__small">Drone Mapping Talk <span>EP#3</span></p>
+                    </div>
+                </div>
+                <div class="d-flex flex-row margin__align__video">
+                    <div class="image__preview">
+                        <a href="playlist_drone_mapping_talk_4.html">
+                            <img src="/images/banner__12.png" alt="video__2" class="banner__width">
+                        </a>
+                    </div>
+                    <div>
+                         <p class="video__title__small">Drone Mapping Talk <span>EP#4</span></p>
+                    </div>
+                </div>
+                <div class="d-flex flex-row margin__align__video">
+                    <div class="image__preview">
+                        <a href="playlist_drone_mapping_talk_5.html">
+                            <img src="/images/banner__13.png" alt="video__2" class="banner__width">
+                        </a>
+                    </div>
+                    <div>
+                         <p class="video__title__small">Drone Mapping Talk <span>EP#5</span></p>
+                    </div>
+                </div>
+                <div class="d-flex flex-row margin__align__video">
+                    <div class="image__preview">
+                        <a href="playlist_drone_mapping_talk_6.html">
+                            <img src="/images/banner__14.png alt=" class="banner__width">
+                        </a>
+                    </div>
+                    <div>
+                         <p class="video__title__small">Drone Mapping Talk <span>EP#6</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/script.js"></script>
+</body>
+
+</html>

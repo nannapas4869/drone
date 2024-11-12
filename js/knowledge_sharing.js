@@ -34,3 +34,18 @@ $(document).ready(function() {
     $('#btnArticle').find('a').css('color', 'black');
   });
 });
+
+// Select the container where videos will be added and the button
+const videoContainer = document.getElementById('video-container');
+const addVideoBtn = document.getElementById('add-video-btn');
+
+// Counter to keep track of video numbers
+let videoCount = 2;
+
+// Function to add a new video
+addVideoBtn.addEventListener('click', () => {
+    videoCount += 1; // Increment video count
+    const newVideo = document.createElement('div'); // Create a new div element
+    newVideo.className = 'video-box col-12 col-md-12 col-lg-3 mb-5'; // Add classes
+    videoContainer.appendChild(newVideo); // Add the new video to the container
+});

@@ -126,6 +126,48 @@ p {
     filter: drop-shadow(0px -3px 4px rgba(0,0,0,0.25));
     background-color: white;;
 }
+.video__text {
+    font-size: 30px;
+    margin-top: 4rem;
+}
+.playlist__text {
+    font-size: 20px;
+}
+
+.video-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px; 
+    background-color: #f8f9fa; 
+    border: 1px solid #ddd; 
+    margin-bottom: 1rem;
+    width: 309px;
+    border-radius: 16px;
+}
+.video-box a {
+    color: black;
+}
+#video-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    --bs-gutter-x: 0;
+    margin-top: 4rem;
+}
+.video__item {
+    border-radius: 16px;
+}
+.video__title {
+    margin-top: 0.8rem;
+}
+.video__title a {
+    color: black;
+    font-size: 20px;
+}
+.video__desc {
+    margin-top: 0.7rem;
+}
 @media screen and (max-width: 1399px) {
     .article__message__title {
         font-size: 22px;
