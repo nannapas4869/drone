@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./fontawesome/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/activities.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Drone Project</title>
+</head>
+<body>
+    <header>
+        <div class="container-custom">
+            <input type="checkbox" name="" id="check">
+
+            <div class="logo-container">
+                <img src="/images/PDRC-logo.svg" alt="logo" width="40">
+            </div>
+
+            <div class="nav-btn">
+                <div class="nav-links">
+                    <ul>
+                        <li class="nav-link" style="--i: .6s">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="nav-link" style="--i: .85s">
+                            <a href="#">Course</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="course.html"> <img src="/images/reactangle.png" alt="rectangle"
+                                                width="10" class="rectangle__image"> กลุ่ม ผู้เริ่มต้น (Beginner)</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#professional"> <img src="/images/reactangle.png" alt="rectangle"
+                                                width="10" class="rectangle__image"> กลุ่ม นักบินโดรน
+                                            เพื่องานถ่ายภาพและวิดีโอ ระดับมืออาชีพ
+                                            (Professional)</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#specialist"><img src="/images/reactangle.png" alt="rectangle"
+                                                width="10" class="rectangle__image"> กลุ่ม นักบินโดรน วิชาชีพเฉพาะทาง
+                                            (Specialist)</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#license"><img src="/images/reactangle.png" alt="rectangle" width="10"
+                                                class="rectangle__image"> กลุ่ม นักบินโดรน รับรองใบอนุญาตตามกฎหมาย
+                                            (License)</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#cert"><img src="/images/reactangle.png" alt="rectangle" width="10"
+                                                class="rectangle__image"> กลุ่ม ผู้ตรวจสอบ (Certificate)</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.1s">
+                            <a href="activities.html" class="active">Activities</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="#">Knowledge Sharing</a>
+                            <div class="dropdown-2">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="knowledge_sharing.html" class="active"><img
+                                                src="/images/reactangle.png" alt="rectangle" width="10"
+                                                class="rectangle__image"> บทความ</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="promo_document.html" id="promo-docs-link"><img
+                                                src="/images/reactangle.png" alt="rectangle" width="10"
+                                                class="rectangle__image">เอกสารประชาสัมพันธ์ </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="faq.html">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="log-sign" style="--i: 1.8s">
+                    <a href="#" class="login__button">Log in</a>
+                    <a href="#" class="signup__button">Register</a>
+                </div>
+            </div>
+
+            <div class="hamburger-menu-container">
+                <div class="hamburger-menu">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container" style="overflow:visible;">
+        <div class="row">
+            <div class="col-6 col-md-6 col-lg-6 d-flex justify-content-end">
+                <p id="activities" class="activities__page border__bottom__line">Activities</p>
+            </div>
+            <div class="col-6 col-md-6 col-lg-6 d-flex justify-content-start">
+                <p id="yearbook" class="activities__page">ทำเนียบรุ่น</p>
+            </div>
+        </div>
+    </div>
+    <article id="activities__page">
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-12 col-md-12 col-lg-12">
+                    <div class="row gutter">
+                        <div class="col-12 col-md-12 col-lg-7 padding__align__image">
+                            <img src="/images/activities__image__1.png" alt="activities__image__1" width="100%" class="activities__image__1">
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-5 white__bg">
+                            <p class="red__title__activities">"เปิดโลกนวัตกรรมใหม่กับเทคโนโลยีโดรน" จังหวัดพิษณุโลก</p>
+                            <p class="content__activities">ที่จัดขึ้นเมื่อวันที่ 31 มกราคม 2566 ณ ห้องประชุมสีหราชเดโชชัย ศูนย์แสดงนิทรรศการและการจัดประชุมนานาชาติสมเด็จพระนเรศวรมหาราช มหาวิทยาลัยนเรศวร จังหวัดพิษณุโลก</p>
+                            <p class="date"><img src="/images/time.png" alt="time"> Sep 9,2024</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="row gutter">
+                        <div class="col-12 col-md-12 col-lg-6 padding__align__image">
+                            <img src="/images/activities__image__2.png" alt="activities__image__1" width="100%" class="activities__image__1">
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-6 white__bg__2">
+                            <p class="red__title__activities__2">เปิดโลกนวัตกรรมใหม่กับเทคโนโลยีโดรน จังหวัดชลบุรี</p>
+                            <p class="content__activities__2">หลักสูตรนักบินอากาศยานไร้คนขับในระยะสายตาแบบปีกหมุน <strong>Remote Pilot Visual Line of Sight Certificate</strong></p>
+                            <p class="date__2"><img src="/images/time.png" alt="time"> Sep 9,2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="row gutter">
+                        <div class="col-12 col-md-12 col-lg-6 padding__align__image">
+                            <img src="/images/activities__image__3.png" alt="activities__image__1" width="100%" class="activities__image__1">
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-6 white__bg__2">
+                            <p class="red__title__activities__2">THAILAND DRONE SYMPOSIUM
+                                2023 – DRONE : POSSIBLE</p>
+                            <p class="content__activities__2">หลักสูตรนักบินอากาศยานไร้คนขับในระยะสายตาแบบปีกหมุน <strong>Remote Pilot Visual Line of Sight Certificate</strong></p>
+                            <p class="date__2"><img src="/images/time.png" alt="time"> Sep 9,2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="row gutter">
+                        <div class="col-12 col-md-12 col-lg-6 padding__align__image">
+                            <img src="/images/activities__image__4.png" alt="activities__image__1" width="100%" class="activities__image__1">
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-6 white__bg__2">
+                            <p class="red__title__activities__2">ทีมงาน #DroneProworks ร่วมงานวันเด็กแห่งชาติ</p>
+                            <p class="content__activities__2">หลักสูตรนักบินอากาศยานไร้คนขับในระยะสายตาแบบปีกหมุน <strong>Remote Pilot Visual Line of Sight Certificate</strong></p>
+                            <p class="date__2"><img src="/images/time.png" alt="time"> Sep 9,2024</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-6">
+                    <div class="row gutter">
+                        <div class="col-12 col-md-12 col-lg-6 padding__align__image">
+                            <img src="/images/activities__image__5.png" alt="activities__image__1" width="100%" class="activities__image__1">
+                        </div>
+                        <div class="col-12 col-md-12 col-lg-6 white__bg__2">
+                            <p class="red__title__activities__2">2023 – DRONE : POSSIBLEเปิดโลกนวัตกรรมใหม่กับเทคโนโลยีโดรน จังหวัดชลบุรี</p>
+                        </p>
+                            <p class="content__activities__2">หลักสูตรนักบินอากาศยานไร้คนขับในระยะสายตาแบบปีกหมุน <strong>Remote Pilot Visual Line of Sight Certificate</strong></p>
+                            <p class="date__2"><img src="/images/time.png" alt="time"> Sep 9,2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="background__grey pt-5">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="d-flex flex-column">
+                            <div>
+                                <img src="/images/activities__image__6.png" alt="activities__image__6" width="100%" class="activity__small">
+                            </div>
+                            <div class="white__bg__3">
+                                <p class="red__title__activities__3">การบรรยายให้ความรู้ เรื่อง “เทคโนโลยีหุ่นยนต์และโดรนระดับองค์กร”
+                                    แก่ นักเรียนมัธยมสาธิตพัทยา</p>
+                                <p class="date__3">
+                                    <img src="/images/time.png" alt="time"> 27 สิงหาคม 2567
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="d-flex flex-column">
+                            <div>
+                                <img src="/images/activities__image__7.png" alt="activities__image__7" width="100%" class="activity__small">
+                            </div>
+                            <div class="white__bg__3">
+                                <p class="red__title__activities__3">โดรนขนส่ง FlyCart 30 ช่วยเหลือสถานการณ์น้ำท่วมสุโขทัย พนังกั้นน้ำถล่ม น้ำยมทะลัก</p>
+
+                                <p class="date__3 flex-container">
+                                    <img src="/images/time.png" alt="time"> 27 สิงหาคม 2567
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="d-flex flex-column">
+                            <div>
+                                <img src="/images/activities__image__8.png" alt="activities__image__8" width="100%" class="activity__small">
+                            </div>
+                            <div class="white__bg__3">
+                                <p class="red__title__activities__3">Mr.Nitin Gupta - CEO, FlytBase เข้าเยี่ยมชม
+                                    ศูนย์ฝึกวิชาชีพอากาศยานไร้คนขับ PATTAYA
+                                    Drone and Robotics Center (PDRC)</p>
+
+                                <p class="date__3 flex-container">
+                                    <img src="/images/time.png" alt="time"> 27 สิงหาคม 2567
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="d-flex flex-column">
+                            <div>
+                                <img src="/images/activities__image__9.png" alt="activities__image__9" width="100%" class="activity__small">
+                            </div>
+                            <div class="white__bg__3">
+                                <p class="red__title__activities__3">ซิสทรอนิกส์ รับมอบประกาศนียบัตร
+                                    และเครื่องหมายการรบร่วมอากาศ-ภาคพื้น
+                                    กิตติมศักดิ์</p>
+
+                                <p class="date__3 flex-container">
+                                    <img src="/images/time.png" alt="time"> 27 สิงหาคม 2567
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="d-flex flex-column">
+                            <div>
+                                <img src="/images/activities__image__10.png" alt="activities__image__10" width="100%" class="activity__small">
+                            </div>
+                            <div class="white__bg__3">
+                                <p class="red__title__activities__3">ซิสทรอนิกส์ จัดงาน "บิน เหนือ เมฆ
+                                    Fly Over Clouds" นับถอยหลังสู่นักบินโดรน
+                                    คนสุดท้ายที่ต้องยืนกลางแจ้ง</p>
+                                <p class="date__3">
+                                    <img src="/images/time.png" alt="time"> 27 สิงหาคม 2567
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="d-flex flex-column">
+                            <div>
+                                <img src="/images/activities__image__11.png" alt="activities__image__11" width="100%" class="activity__small">
+                            </div>
+                            <div class="white__bg__3">
+                                <p class="red__title__activities__3">งานทำบุญบริษัท ซิสทรอนิกส์ อินส์แล็บ จำกัดประจำปี 2567</p>
+
+                                <p class="date__3 flex-container">
+                                    <img src="/images/time.png" alt="time"> 27 สิงหาคม 2567
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="d-flex flex-column">
+                            <div>
+                                <img src="/images/activities__image__12.png" alt="activities__image__8" width="100%" class="activity__small">
+                            </div>
+                            <div class="white__bg__3">
+                                <p class="red__title__activities__3">ซิสทรอนิกส์ ส่งหุ่นยนต์เสมือนจริงอัจฉริยะ ร่วมงาน 𝗔𝘀𝗶𝗮-𝗣𝗮𝗰𝗶𝗳𝗶𝗰 𝗜𝗖𝗧 𝗦𝘂𝗺𝗺𝗶𝘁 2024</p>
+
+                                <p class="date__3 flex-container">
+                                    <img src="/images/time.png" alt="time"> 27 สิงหาคม 2567
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="d-flex flex-column">
+                            <div>
+                                <img src="/images/activities__image__13.png" alt="activities__image__9" width="100%" class="activity__small">
+                            </div>
+                            <div class="white__bg__3">
+                                <p class="red__title__activities__3">หลักสูตร 𝗥𝗩𝗖 : 𝗠𝘂𝗹𝘁𝗶-𝗥𝗼𝘁𝗼𝗿  รุ่นแรก</p>
+
+                                <p class="date__3 flex-container">
+                                    <img src="/images/time.png" alt="time"> 27 สิงหาคม 2567
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article id="yearbook__page">
+        <h1>yearbook</h1>
+    </article>
+    <script src="/js/activities.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>

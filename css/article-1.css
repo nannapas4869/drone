@@ -85,3 +85,64 @@
         margin-top: 0rem;
     }
 }
+@media screen and (max-width: 767px) {
+    .article__title {
+        font-size: 25px;
+    }
+    .timeandsee {
+        font-size: 14px;
+    }
+    .article__content__title {
+        font-size: 25px;
+    }
+    .article__content__desc {
+        font-size: 17px;
+    }
+    .facebook__box {
+        width: 210px;
+    } 
+    .see__more__text {
+        font-size: 17px;
+    }
+    .facebook__img {
+        width: 40px;
+    }
+    .see__most {
+        font-size: 25px;
+    }
+    .content__text {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .article__title {
+        font-size: 20px;
+    }
+    .timeandsee {
+        font-size: 11px;
+    }
+    .article__content__title {
+        font-size: 20px;
+    }
+    .article__content__desc {
+        font-size: 14px;
+    }
+    .facebook__box {
+        width: 180px;
+        height: 45px;
+        padding: 0.5rem 0.5rem;
+    } 
+    .see__more__text {
+        font-size: 14px;
+    }
+    .facebook__img {
+        width: 35px;
+    }
+    .see__most {
+        font-size: 20px;
+    }
+    .content__text {
+        font-size: 13px;
+    }
+}
