@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./fontawesome/all.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/knowledge_sharing.css">
+    <link rel="stylesheet" href="/css/news.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Drone Project</title>
+</head>
+<body>
+    <header>
+        <div class="container-custom">
+            <input type="checkbox" name="" id="check">
+
+            <div class="logo-container">
+                <img src="/images/PDRC-logo.svg" alt="logo" width="40">
+            </div>
+
+            <div class="nav-btn">
+                <div class="nav-links">
+                    <ul>
+                        <li class="nav-link" style="--i: .6s">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="nav-link" style="--i: .85s">
+                            <a href="#">Course</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="course.html"> <img src="/images/reactangle.png" alt="rectangle"
+                                                width="10" class="rectangle__image"> กลุ่ม ผู้เริ่มต้น (Beginner)</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#professional"> <img src="/images/reactangle.png" alt="rectangle"
+                                                width="10" class="rectangle__image"> กลุ่ม นักบินโดรน
+                                            เพื่องานถ่ายภาพและวิดีโอ ระดับมืออาชีพ
+                                            (Professional)</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#specialist"><img src="/images/reactangle.png" alt="rectangle"
+                                                width="10" class="rectangle__image"> กลุ่ม นักบินโดรน วิชาชีพเฉพาะทาง
+                                            (Specialist)</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#license"><img src="/images/reactangle.png" alt="rectangle" width="10"
+                                                class="rectangle__image"> กลุ่ม นักบินโดรน รับรองใบอนุญาตตามกฎหมาย
+                                            (License)</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#cert"><img src="/images/reactangle.png" alt="rectangle" width="10"
+                                                class="rectangle__image"> กลุ่ม ผู้ตรวจสอบ (Certificate)</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.1s">
+                            <a href="activities.html" class="active">Activities</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="#">Knowledge Sharing</a>
+                            <div class="dropdown-2">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="knowledge_sharing.html" class="active"><img
+                                                src="/images/reactangle.png" alt="rectangle" width="10"
+                                                class="rectangle__image"> บทความ</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="promo_document.html" id="promo-docs-link"><img
+                                                src="/images/reactangle.png" alt="rectangle" width="10"
+                                                class="rectangle__image">เอกสารประชาสัมพันธ์ </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="faq.html">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="log-sign" style="--i: 1.8s">
+                    <a href="#" class="login__button">Log in</a>
+                    <a href="#" class="signup__button">Register</a>
+                </div>
+            </div>
+
+            <div class="hamburger-menu-container">
+                <div class="hamburger-menu">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="red__bg">
+        <div class="flex__container gap-4">
+            <div>
+                <p class="filter__text">ตัวกรอง</p>
+            </div>
+            <div class="flex__align">
+                <select class="form-select" >
+                    <option selected disabled hidden>ปี</option>
+                    <option value="1">2567</option>
+                    <option value="2">2566</option>
+                  </select>
+            </div>
+            <div class="flex__align">
+                <select class="form-select" >
+                    <option selected disabled hidden>เดือน</option>
+                    <option value="12">ธันวาคม</option>
+                    <option value="11">พฤศจิกายน</option>
+                    <option value="10">ตุลาคม</option>
+                    <option value="9">กันยายน</option>
+                    <option value="8">สิงหาคม</option>
+                    <option value="7">กรกฎาคม</option>
+                    <option value="6">มิถุนายน</option>
+                    <option value="5">พฤษภาคม</option>
+                    <option value="4">เมษายน</option>
+                    <option value="3">มีนาคม</option>
+                    <option value="2">กุมภาพันธ์</option>
+                    <option value="1">มกราคม</option>
+                  </select>
+            </div>
+            <div>
+                <button class="filter__button">ค้นหา</button>
+            </div>
+        </div>
+    </div>
+    <div class="container__box">
+        <div class="row" style="--bs-gutter-x: 0;">
+            <div class="col-md-12">
+                <div class="input-group input-group-lg mt-5">
+                    <input type="text" id="globalSearch" class="form-control search__input" placeholder="ค้นหา">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-12 col-md-12 col-lg-12">
+                <img src="/images/red__line.png" alt="red__line">
+                <div class="month-year-block">
+                    <p class="month-year">มกราคม 2566</p>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12 col-md-12 col-lg-12">
+                
+            </div>
+        </div>
+    </div>
+    <script src="/js/news.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
