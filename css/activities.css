@@ -100,7 +100,7 @@ section[hidden] {
     flex-direction: column;
     justify-content: space-between;
     height: 140px;
-    padding: 1rem 1rem 0 1rem;
+    padding: 1rem 1rem 1rem 1rem;
     box-sizing: border-box;
 }
 
@@ -155,8 +155,75 @@ p {
     border-radius: 30px 0 0 30px;
     box-shadow: -1px 5px 14px rgba(0, 0, 0, 0.25);
 }
+.yearbook__title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 4rem;
+}
+.yearbook__subtitle {
+    font-size: 30px;
+    font-weight: 600;
+}
+.bg__red {
+    background: linear-gradient(to right, 
+    rgba(121,17,24,1) 0%, 
+    rgba(164,19,28,0.93) 25%, 
+    rgba(209,21,33,0.97) 50%, 
+    rgba(179,21,32,0.9) 75%, 
+    rgba(149,22,30,1) 100%);
 
-@media screen and (max-width: 1399px) {
+    width: 100%;
+    height: auto;
+    margin-top: 8rem;
+}
+.bg__purple {
+    background: linear-gradient(180deg, rgba(42,24,87,0.92) 0%, rgba(137,48,142,1) 22%,  rgba(137,48,142,1) 45%,  rgba(42,24,87,0.92) 100%);
+    margin-top: 7rem;
+}
+.profile-card {
+    background-color: white; /* White background for the card */
+    border-radius: 1000px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    display: flex;
+    padding: 0px;
+    max-width: 450px; /* Limit the width */
+    max-height: 130px;
+    position: relative;
+    bottom: 44px;
+    box-shadow: 5px 5px 14px rgba(0,0,0,0.25);
+}
+
+/* Profile image container */
+.profile-image {
+    flex-shrink: 0; /* Prevent shrinking */
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */; /* Circular shape */
+    margin-right: 40px; /* Space between image and text */
+    margin-bottom: 27px;
+}
+
+/* Ensure image fills the container */
+.profile-image img {
+    width: 112%;
+    height: 124%;
+    object-fit: cover; /* Make sure image fits nicely */
+}
+
+.profile-info {
+    position: relative;
+    bottom: 21px;
+}
+.full_name {
+    font-size: 25px;
+}
+.additionl_info {
+    font-size: 14px;
+}
+p {
+    margin-bottom: 0 !important;
+}
+
+@media screen and (max-width: 1400px) {
     .white__bg {
         padding: 1rem 2rem 2rem 2rem;
     }
@@ -176,9 +243,12 @@ p {
     .date__2 {
         font-size: 10px;
     }
+    .profile-image {
+        margin-right: 23px;
+    }
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 1200px) {
     .white__bg {
         padding: 1rem 2rem 0 2rem;
     }
@@ -201,6 +271,30 @@ p {
     }
     .red__title__activities__3 {
         font-size: 11px;
+    }
+    .profile-image img {
+        width: 89%;
+        height: 145%;
+        position: relative;
+        left: -17px;
+        top: -2px;
+    }
+    .profile-image {
+        margin-right: -37px;
+    }
+    .profile-image {
+        max-height: 101px;
+    }
+    .profile-card {
+        max-height: 101px;
+        max-width: 480px;
+        bottom: 35px;
+    }
+    .full_name {
+        font-size: 20px;
+    }
+    .additionl_info {
+        font-size: 12px;
     }
 }
 @media screen and (max-width: 991px) {
@@ -232,9 +326,31 @@ p {
         font-size: 13px;
     }
 }
+@media screen and (max-width: 767px) {
+    .full_name {
+        font-size: 30px;
+    }
+    .profile-image {
+        margin-right: 10px;
+    }
+    .additionl_info {
+        font-size: 15px;
+    }
+    .yearbook__title {
+        font-size: 28px;
+    }
+    .yearbook__subtitle {
+        font-size: 26px;
+    }  
+}
 @media screen and (max-width: 575px) {
     .red__title__activities__3  {
         font-size: 16px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .full_name {
+        font-size: 23px;
     }
 }
 @media screen and (max-width: 378px) {
@@ -243,5 +359,14 @@ p {
     }
     .red__title__activities__3  {
         font-size: 14px;
+    }
+    .yearbook__subtitle  {
+        font-size: 23px;
+    }
+    .yearbook__title {
+        font-size: 23px;
+    }
+    .bg__red, .bg__purple {
+        margin-top: 2rem;
     }
 }
