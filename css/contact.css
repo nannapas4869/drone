@@ -25,7 +25,47 @@
 }
 .iframe__width {
     width: 100%;
-    height: 500px;
+    height: 1000px;
+}
+.footer__block {
+    width: 100%;
+    padding: 1.5rem 1.5rem 0 1.5rem;
+    margin-top: 8rem;
+    box-shadow: 0 -3px 4px rgba(0,0,0,0.25);
+    background: linear-gradient(180deg, #400606 0%, #A60F0F 100%);
+    height: auto;
+}
+.social__text {
+    color: white;
+    font-size: 14px;
+    margin-top: 1.8rem;
+}
+.img__dark {
+    width: 100px;
+    margin-top: 2rem;
+}
+.text__white {
+    color: white;
+    margin-top: 1rem;
+    font-size: 16px;
+}
+.white-title {
+    font-size: 20px;
+    margin-top: 2rem;
+    color: white;
+}
+p a ,p a:hover{
+    color: white;
+}
+.text__left {
+    text-align: left;
+}
+.margin__top {
+    margin-top: 3.7rem;
+}
+.icon__align {
+    margin-top: 1rem;
+    margin-right: 1rem;
 }
 @media (max-width: 1358px){
     .hamburger-menu-container{
