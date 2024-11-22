@@ -83,7 +83,7 @@
 .month {
     margin-top: 3rem;
 }
-.activity__title a {
+.activity__title a,.activity__title a:hover {
     color: #791118;
 }
 .floating-button {
