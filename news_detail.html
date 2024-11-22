@@ -1,281 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
-    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="./fontawesome/all.min.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="/css/knowledge_sharing.css" />
-    <link rel="stylesheet" href="/css/news_detail.css" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <title>Drone Project</title>
-  </head>
-  <body>
-    <header>
-      <div class="container-custom">
-        <input type="checkbox" name="" id="check" />
 
-        <div class="logo-container">
-          <img src="/images/PDRC-logo.svg" alt="logo" width="40" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
+  <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="./fontawesome/all.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/knowledge_sharing.css" />
+  <link rel="stylesheet" href="/css/news_detail.css" />
+  <link rel="stylesheet" href="/css/style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <title>Drone Project</title>
+</head>
+
+<body>
+  <header>
+    <div class="container-custom">
+      <input type="checkbox" name="" id="check" />
+
+      <div class="logo-container">
+        <img src="/images/PDRC-logo.svg" alt="logo" width="40" />
+      </div>
+
+      <div class="nav-btn">
+        <div class="nav-links">
+          <ul>
+            <li class="nav-link" style="--i: 0.6s">
+              <a href="index.html">Home</a>
+            </li>
+            <li class="nav-link" style="--i: 0.85s">
+              <a href="#">Course</a>
+              <div class="dropdown">
+                <ul>
+                  <li class="dropdown-link">
+                    <a href="course.html">
+                      <img src="/images/reactangle.png" alt="rectangle" width="10" class="rectangle__image" />
+                      กลุ่ม ผู้เริ่มต้น (Beginner)</a>
+                  </li>
+                  <li class="dropdown-link">
+                    <a href="#professional">
+                      <img src="/images/reactangle.png" alt="rectangle" width="10" class="rectangle__image" />
+                      กลุ่ม นักบินโดรน เพื่องานถ่ายภาพและวิดีโอ ระดับมืออาชีพ
+                      (Professional)</a>
+                  </li>
+                  <li class="dropdown-link">
+                    <a href="#specialist"><img src="/images/reactangle.png" alt="rectangle" width="10"
+                        class="rectangle__image" />
+                      กลุ่ม นักบินโดรน วิชาชีพเฉพาะทาง (Specialist)</a>
+                  </li>
+                  <li class="dropdown-link">
+                    <a href="#license"><img src="/images/reactangle.png" alt="rectangle" width="10"
+                        class="rectangle__image" />
+                      กลุ่ม นักบินโดรน รับรองใบอนุญาตตามกฎหมาย (License)</a>
+                  </li>
+                  <li class="dropdown-link">
+                    <a href="#cert"><img src="/images/reactangle.png" alt="rectangle" width="10"
+                        class="rectangle__image" />
+                      กลุ่ม ผู้ตรวจสอบ (Certificate)</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-link" style="--i: 1.1s">
+              <a href="activities.html" class="active">Activities</a>
+            </li>
+            <li class="nav-link" style="--i: 1.35s">
+              <a href="#">Knowledge Sharing</a>
+              <div class="dropdown-2">
+                <ul>
+                  <li class="dropdown-link">
+                    <a href="knowledge_sharing.html" class="active"><img src="/images/reactangle.png" alt="rectangle"
+                        width="10" class="rectangle__image" />
+                      บทความ</a>
+                  </li>
+                  <li class="dropdown-link">
+                    <a href="promo_document.html" id="promo-docs-link"><img src="/images/reactangle.png" alt="rectangle"
+                        width="10" class="rectangle__image" />เอกสารประชาสัมพันธ์
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="nav-link" style="--i: 1.35s">
+              <a href="about.html">About Us</a>
+            </li>
+            <li class="nav-link" style="--i: 1.35s">
+              <a href="contact.html">Contact Us</a>
+            </li>
+            <li class="nav-link" style="--i: 1.35s">
+              <a href="faq.html">FAQ</a>
+            </li>
+            <li class="nav-link margin__left" style="--i: 1.35s;">
+              <i class="ri-shopping-cart-2-fill red-cart"></i>
+            </li>
+            <li class="nav-link" style="--i: 1.35s">
+              <select class="form-select">
+                <option selected>TH</option>
+                <option value="1">EN</option>
+              </select>
+            </li>
+          </ul>
         </div>
 
-        <div class="nav-btn">
-          <div class="nav-links">
-            <ul>
-              <li class="nav-link" style="--i: 0.6s">
-                <a href="index.html">Home</a>
-              </li>
-              <li class="nav-link" style="--i: 0.85s">
-                <a href="#">Course</a>
-                <div class="dropdown">
-                  <ul>
-                    <li class="dropdown-link">
-                      <a href="course.html">
-                        <img
-                          src="/images/reactangle.png"
-                          alt="rectangle"
-                          width="10"
-                          class="rectangle__image"
-                        />
-                        กลุ่ม ผู้เริ่มต้น (Beginner)</a
-                      >
-                    </li>
-                    <li class="dropdown-link">
-                      <a href="#professional">
-                        <img
-                          src="/images/reactangle.png"
-                          alt="rectangle"
-                          width="10"
-                          class="rectangle__image"
-                        />
-                        กลุ่ม นักบินโดรน เพื่องานถ่ายภาพและวิดีโอ ระดับมืออาชีพ
-                        (Professional)</a
-                      >
-                    </li>
-                    <li class="dropdown-link">
-                      <a href="#specialist"
-                        ><img
-                          src="/images/reactangle.png"
-                          alt="rectangle"
-                          width="10"
-                          class="rectangle__image"
-                        />
-                        กลุ่ม นักบินโดรน วิชาชีพเฉพาะทาง (Specialist)</a
-                      >
-                    </li>
-                    <li class="dropdown-link">
-                      <a href="#license"
-                        ><img
-                          src="/images/reactangle.png"
-                          alt="rectangle"
-                          width="10"
-                          class="rectangle__image"
-                        />
-                        กลุ่ม นักบินโดรน รับรองใบอนุญาตตามกฎหมาย (License)</a
-                      >
-                    </li>
-                    <li class="dropdown-link">
-                      <a href="#cert"
-                        ><img
-                          src="/images/reactangle.png"
-                          alt="rectangle"
-                          width="10"
-                          class="rectangle__image"
-                        />
-                        กลุ่ม ผู้ตรวจสอบ (Certificate)</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-link" style="--i: 1.1s">
-                <a href="activities.html" class="active">Activities</a>
-              </li>
-              <li class="nav-link" style="--i: 1.35s">
-                <a href="#">Knowledge Sharing</a>
-                <div class="dropdown-2">
-                  <ul>
-                    <li class="dropdown-link">
-                      <a href="knowledge_sharing.html" class="active"
-                        ><img
-                          src="/images/reactangle.png"
-                          alt="rectangle"
-                          width="10"
-                          class="rectangle__image"
-                        />
-                        บทความ</a
-                      >
-                    </li>
-                    <li class="dropdown-link">
-                      <a href="promo_document.html" id="promo-docs-link"
-                        ><img
-                          src="/images/reactangle.png"
-                          alt="rectangle"
-                          width="10"
-                          class="rectangle__image"
-                        />เอกสารประชาสัมพันธ์
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li class="nav-link" style="--i: 1.35s">
-                <a href="about.html">About Us</a>
-              </li>
-              <li class="nav-link" style="--i: 1.35s">
-                <a href="contact.html">Contact Us</a>
-              </li>
-              <li class="nav-link" style="--i: 1.35s">
-                <a href="faq.html">FAQ</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="log-sign" style="--i: 1.8s">
-            <a href="#" class="login__button">Log in</a>
-            <a href="#" class="signup__button">Register</a>
-          </div>
-        </div>
-
-        <div class="hamburger-menu-container">
-          <div class="hamburger-menu">
-            <div></div>
-          </div>
+        <div class="log-sign" style="--i: 1.8s">
+          <a href="#" class="login__button">Log in</a>
+          <a href="#" class="signup__button">Register</a>
         </div>
       </div>
-    </header>
-    <div class="container" style="overflow: visible">
-      <p class="news__title">
-        ซิสทรอนิกส์
-        ร่วมงานการจัดประชุมและการสัมมนาทางวิชาการสมาคมสันนิบาตเทศบาลแห่งประเทศไทย
-        ครั้งที่ 2 / 2567
-      </p>
-    </div>
-    <div class="container-fluid">
-      <div class="flex__ac gap-2">
-        <div class="d-flex flex-column justify-content-start gap-2">
-          <div>
-            <img src="/images/10.png" alt="10" width="100%" />
-          </div>
-          <div>
-            <img src="/images/11.png" alt="11" width="100%" />
-          </div>
-        </div>
-        <div class="d-flex flex-column justify-content-start gap-2">
-          <div>
-            <img src="/images/12.png" alt="12" width="100%" />
-          </div>
-          <div>
-            <img src="/images/13.png" alt="13" width="100%" />
-          </div>
-        </div>
-        <div class="d-flex flex-column justify-content-start gap-2">
-          <div>
-            <img src="/images/15.png" alt="15" width="100%" />
-          </div>
-          <div>
-            <img src="/images/16.png" alt="16" width="100%" />
-          </div>
+
+      <div class="hamburger-menu-container">
+        <div class="hamburger-menu">
+          <div></div>
         </div>
       </div>
     </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-12 col-lg-12">
-          <p class="news__subtitle">การประชุม ณ อาคารชาเลนเจอร์ อาคาร 2 อิมแพ็ค ชาเลนเจอร์ เมืองทองธานี</p>
-          <p class="news-time"><img src="/images/time_2.png" alt="time_2" class="times__icon"> 4-6 กันยายน 2567</p>
-          <p class="news__content">สมาคมสันนิบาตเทศบาลแห่งประเทศไทย (ส.ท.ท.) ได้กำหนดให้มีการประชุม และการสัมมนาทางวิชาการสมาคมสันนิบาตเทศบาลแห่งประเทศไทย ครั้งที่ 2/2567
-            โดยมีนายอนุทิน ชาญววีรกูล รองนายกรัฐมนตรี และรัฐมนตรีว่าการกระทรวงมหาดไทย เป็นประธานกล่าวเปิดการประชุมและปาฐกถาพิเศษ วัตถุประสงค์เพื่อพัฒนาบุคลากร และเพิ่มประสิทธิภาพในการปฏิบัติงาน</p>
-          <p class="news__content__2">
-            บริษัท ซิสทรอนิกส์ จำกัด ได้นำสินค้าหลายรายการจากบริษัทชั้นนำเข้าจัดแสดงด้วย
-เช่น เทคโนโลยีอากาศยานไร้คนขับ จาก <strong>DJI Enterprise</strong> และหุ่นยนต์เสมือนจริงอัจฉริยะ
-จาก <strong>Unitree Robotics</strong> เข้าร่วมแสดงในงานครั้งนี้ด้วย
-          </p>
-        </div>
-        <div class="row gutter">
-          <div class="col-12 col-md-12 col-lg-12">
-            <img src="/images/news-img.png" alt="news-img" width="100%" class="mb-5">
-          </div>
-          <div class="col-12 col-md-12 col-lg-12">
-            <img src="/images/news-img-2.png" alt="news-img-2" width="100%"  class="mb-5">
-          </div>
-        </div>
-      </div>
-      <button class="floating-button"> <i class="ri-arrow-go-back-line"></i> <a href="news.html">ย้อนกลับ</a> </button>
-    </div>
-    <div class="footer__block">
-      <div class="container-fluid">
-          <div class="row">
-              <div class="col-12 col-md-6 col-lg-4">
-                  <div class="d-flex flex-column">
-                      <div>
-                          <img src="/images/logo_dark.png" alt="logo-dark" class="img__dark">
-                      </div>
-                      <div>
-                          <p class="text__white">พัทยา โดรน แอนด์ โรโบติกส์ เซ็นเตอร์</p>
-                          <p class="text__white">เลขที่ 362/24 หมู่ 10 ตำบลห้วยใหญ่</p>
-                          <p class="text__white">อำเภอบางละมุง จังหวัดชลบุรี</p>
-                          <p class="text__white">รหัสไปรษณีย์ 20150</p>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                  <div class="d-flex flex-column">
-                      <p class="white-title">
-                          ช่องทางติดต่อเรา
-                      </p>
-                      <div class="d-flex flex-row">
-                          <div class="icon__align">
-                              <img src="/images/facebook1.png" alt="facebook-icon">
-                          </div>
-                          <p class="social__text"><a
-                                  href="https://www.facebook.com/profile.php?id=61558845597524">PDRC: Pattaya Drone
-                                  and Robotics Center</a></p>
-                      </div>
-                      <div class="d-flex flex-row">
-                          <div class="icon__align">
-                              <img src="/images/telephone1.png" alt="telephone1">
-                          </div>
-                          <p class="social__text">+66 (0) 3811 1860, +66 (0) 6 4654 4664</p>
-                      </div>
-                      <div class="d-flex flex-row">
-                          <div class="icon__align">
-                              <img src="/images/website1.png" alt="website1">
-                          </div>
-                          <p class="social__text"><a href="https://www.pattayapdrc.com/">www.pattayapdrc.com</a></p>
-                      </div>
-                      <div class="d-flex flex-row">
-                          <div class="icon__align">
-                              <img src="/images/mail1.png" alt="mail1">
-                          </div>
-                          <p class="social__text">pdrc@systronics.co.th</p>
-                      </div>
-                  </div>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4 mb-5">
-                  <div class="d-flex flex-column">
-                      <p class="white-title text__right">
-                          ผังเว็บไซต์
-                      </p>
-                      <p class="text__white text__left"><a href="index.html">Home</a></p>
-                      <p class="text__white text__left"><a href="course.html">Course</a></p>
-                      <p class="text__white text__left"><a href="activities.html">Activities</a></p>
-                      <p class="text__white text__left"><a href="knowledge_sharing.html">knowledge Sharing</a></p>
-                      <p class="text__white text__left"><a href="about.html">About Us</a></p>
-                      <p class="text__white text__left"><a href="contact.html">Contact Us</a></p>
-                      <p class="text__white text__left"><a href="faq.html">FAQ</a></p>
-                  </div>
-              </div>
-          </div>
-      </div>
+  </header>
+  <div class="container" style="overflow: visible">
+    <p class="news__title">
+      ซิสทรอนิกส์
+      ร่วมงานการจัดประชุมและการสัมมนาทางวิชาการสมาคมสันนิบาตเทศบาลแห่งประเทศไทย
+      ครั้งที่ 2 / 2567
+    </p>
   </div>
-    <script src="/js/news_detail.js"></script>
-    <script src="/js/script.js"></script>
-  </body>
+  <div class="container-fluid">
+    <div class="flex__ac gap-2">
+      <div class="d-flex flex-column justify-content-start gap-2">
+        <div>
+          <img src="/images/10.png" alt="10" width="100%" />
+        </div>
+        <div>
+          <img src="/images/11.png" alt="11" width="100%" />
+        </div>
+      </div>
+      <div class="d-flex flex-column justify-content-start gap-2">
+        <div>
+          <img src="/images/12.png" alt="12" width="100%" />
+        </div>
+        <div>
+          <img src="/images/13.png" alt="13" width="100%" />
+        </div>
+      </div>
+      <div class="d-flex flex-column justify-content-start gap-2">
+        <div>
+          <img src="/images/15.png" alt="15" width="100%" />
+        </div>
+        <div>
+          <img src="/images/16.png" alt="16" width="100%" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-12 col-lg-12">
+        <p class="news__subtitle">การประชุม ณ อาคารชาเลนเจอร์ อาคาร 2 อิมแพ็ค ชาเลนเจอร์ เมืองทองธานี</p>
+        <p class="news-time"><img src="/images/time_2.png" alt="time_2" class="times__icon"> 4-6 กันยายน 2567</p>
+        <p class="news__content">สมาคมสันนิบาตเทศบาลแห่งประเทศไทย (ส.ท.ท.) ได้กำหนดให้มีการประชุม
+          และการสัมมนาทางวิชาการสมาคมสันนิบาตเทศบาลแห่งประเทศไทย ครั้งที่ 2/2567
+          โดยมีนายอนุทิน ชาญววีรกูล รองนายกรัฐมนตรี และรัฐมนตรีว่าการกระทรวงมหาดไทย
+          เป็นประธานกล่าวเปิดการประชุมและปาฐกถาพิเศษ วัตถุประสงค์เพื่อพัฒนาบุคลากร และเพิ่มประสิทธิภาพในการปฏิบัติงาน
+        </p>
+        <p class="news__content__2">
+          บริษัท ซิสทรอนิกส์ จำกัด ได้นำสินค้าหลายรายการจากบริษัทชั้นนำเข้าจัดแสดงด้วย
+          เช่น เทคโนโลยีอากาศยานไร้คนขับ จาก <strong>DJI Enterprise</strong> และหุ่นยนต์เสมือนจริงอัจฉริยะ
+          จาก <strong>Unitree Robotics</strong> เข้าร่วมแสดงในงานครั้งนี้ด้วย
+        </p>
+      </div>
+      <div class="row gutter">
+        <div class="col-12 col-md-12 col-lg-12">
+          <img src="/images/news-img.png" alt="news-img" width="100%" class="mb-5">
+        </div>
+        <div class="col-12 col-md-12 col-lg-12">
+          <img src="/images/news-img-2.png" alt="news-img-2" width="100%" class="mb-5">
+        </div>
+      </div>
+    </div>
+    <button class="floating-button"> <i class="ri-arrow-go-back-line"></i> <a href="news.html">ย้อนกลับ</a> </button>
+  </div>
+  <div class="footer__block">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="d-flex flex-column">
+            <div>
+              <img src="/images/logo_dark.png" alt="logo-dark" class="img__dark">
+            </div>
+            <div>
+              <p class="text__white">พัทยา โดรน แอนด์ โรโบติกส์ เซ็นเตอร์</p>
+              <p class="text__white">เลขที่ 362/24 หมู่ 10 ตำบลห้วยใหญ่</p>
+              <p class="text__white">อำเภอบางละมุง จังหวัดชลบุรี</p>
+              <p class="text__white">รหัสไปรษณีย์ 20150</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <div class="d-flex flex-column">
+            <p class="white-title">
+              ช่องทางติดต่อเรา
+            </p>
+            <div class="d-flex flex-row">
+              <div class="icon__align">
+                <img src="/images/facebook1.png" alt="facebook-icon">
+              </div>
+              <p class="social__text"><a href="https://www.facebook.com/profile.php?id=61558845597524">PDRC: Pattaya
+                  Drone
+                  and Robotics Center</a></p>
+            </div>
+            <div class="d-flex flex-row">
+              <div class="icon__align">
+                <img src="/images/telephone1.png" alt="telephone1">
+              </div>
+              <p class="social__text">+66 (0) 3811 1860, +66 (0) 6 4654 4664</p>
+            </div>
+            <div class="d-flex flex-row">
+              <div class="icon__align">
+                <img src="/images/website1.png" alt="website1">
+              </div>
+              <p class="social__text"><a href="https://www.pattayapdrc.com/">www.pattayapdrc.com</a></p>
+            </div>
+            <div class="d-flex flex-row">
+              <div class="icon__align">
+                <img src="/images/mail1.png" alt="mail1">
+              </div>
+              <p class="social__text">pdrc@systronics.co.th</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 mb-5">
+          <div class="d-flex flex-column">
+            <p class="white-title text__right">
+              ผังเว็บไซต์
+            </p>
+            <p class="text__white text__left"><a href="index.html">Home</a></p>
+            <p class="text__white text__left"><a href="course.html">Course</a></p>
+            <p class="text__white text__left"><a href="activities.html">Activities</a></p>
+            <p class="text__white text__left"><a href="knowledge_sharing.html">knowledge Sharing</a></p>
+            <p class="text__white text__left"><a href="about.html">About Us</a></p>
+            <p class="text__white text__left"><a href="contact.html">Contact Us</a></p>
+            <p class="text__white text__left"><a href="faq.html">FAQ</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/news_detail.js"></script>
+  <script src="/js/script.js"></script>
+</body>
+
 </html>
