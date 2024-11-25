@@ -124,6 +124,9 @@ p a ,p a:hover{
     margin-top: 1rem;
     margin-right: 1rem;
 }
+.specialist_border_radius {
+    border-radius: 20px;
+}
 @media screen and (max-width: 1399px){
     .flex__course__detail__button {
         flex-basis: 380px;
