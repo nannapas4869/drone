@@ -75,6 +75,20 @@ p a ,p a:hover{
     margin-top: 1rem;
     margin-right: 1rem;
 }
-@media screen and (max-width: 991px) {
-
+.floating-button {
+    position: fixed; 
+    bottom: 30px;    
+    right: 30px;      
+    padding: 10px 20px;
+    color: white;
+    background-color: #791118;   
+    border: none;   
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    font-size: 25px;
+}
+.floating-button a, .floating-button a:hover {
+  color: white;
+  text-decoration: none;
 }

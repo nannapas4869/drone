@@ -715,7 +715,11 @@ p a ,p a:hover{
 .red-cart {
     font-size:30px;
     color: #791118; 
-   }
+}
+
+.m__right {
+    margin-right: 12rem;
+}
 
 @media screen and (max-width: 1784px) {
     .text-overlay-3 {
