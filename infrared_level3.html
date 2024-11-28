@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+    <script src="./bootstrap/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./fontawesome/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/faq.css">
+    <link rel="stylesheet" href="/css/course_detail.css" />
+    <link rel="stylesheet" href="/css/infrared_level2.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Drone Project</title>
+</head>
+<body>
+    <header>
+        <div class="container-custom">
+            <input type="checkbox" name="" id="check">
+
+            <div class="logo-container">
+                <img src="/images/PDRC-logo.svg" alt="logo" width="40">
+            </div>
+
+            <div class="nav-btn">
+                <div class="nav-links">
+                    <ul>
+                        <li class="nav-link" style="--i: .6s">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="nav-link" style="--i: .85s">
+                            <a href="#" class="active">Course</a>
+                            <div class="dropdown">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="course.html"> <img src="/images/reactangle.png" alt="rectangle"
+                                                width="10" class="rectangle__image"> กลุ่ม ผู้เริ่มต้น (Beginner)</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#professional"> <img src="/images/reactangle.png" alt="rectangle"
+                                                width="10" class="rectangle__image"> กลุ่ม นักบินโดรน
+                                            เพื่องานถ่ายภาพและวิดีโอ ระดับมืออาชีพ (Professional)</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#specialist"><img src="/images/reactangle.png" alt="rectangle"
+                                                width="10" class="rectangle__image"> กลุ่ม นักบินโดรน วิชาชีพเฉพาะทาง
+                                            (Specialist)</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#license"><img src="/images/reactangle.png" alt="rectangle" width="10"
+                                                class="rectangle__image"> กลุ่ม นักบินโดรน รับรองใบอนุญาตตามกฎหมาย
+                                            (License)</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="#cert"><img src="/images/reactangle.png" alt="rectangle" width="10"
+                                                class="rectangle__image"> กลุ่ม ผู้ตรวจสอบ (Certificate)</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.1s">
+                            <a href="activities.html">Activities</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="#">Knowledge Sharing</a>
+                            <div class="dropdown-2">
+                                <ul>
+                                    <li class="dropdown-link">
+                                        <a href="knowledge_sharing.html"><img src="/images/reactangle.png"
+                                                alt="rectangle" width="10" class="rectangle__image"> บทความ</a>
+                                    </li>
+                                    <li class="dropdown-link">
+                                        <a href="promo_document.html" id="promo-docs-link"><img
+                                                src="/images/reactangle.png" alt="rectangle" width="10"
+                                                class="rectangle__image">เอกสารประชาสัมพันธ์ </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="about.html">About Us</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="contact.html">Contact Us</a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="faq.html">FAQ</a>
+                        </li>
+                        <li class="nav-link margin__left" style="--i: 1.35s;">
+                            <i class="ri-shopping-cart-2-fill red-cart"></i>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <select class="form-select">
+                                <option selected>TH</option>
+                                <option value="1">EN</option>
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="log-sign" style="--i: 1.8s">
+                    <a href="#" class="login__button">Log in</a>
+                    <a href="#" class="signup__button">Register</a>
+                </div>
+            </div>
+
+            <div class="hamburger-menu-container">
+                <div class="hamburger-menu">
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-8">
+                <p class="title__main">หลักสูตร ผู้ตรวจภาพความร้อน ระดับ 3 
+                    (Certify Level 3 Infrared Thermography)</p>
+                <div class="d-flex flex-row">
+                    <div>
+                        <img src="/images/teacher.png" alt="teacher" class="mt-3 teacher__width">
+                    </div>
+                    <div class="teacher__name">
+                        <p class="teacher__text" style="font-weight: 600;">ผู้สอน</p>
+                        <p class="teacher__text">จักรกฤษณ์ อุปยโส</p>
+                    </div>
+                    <div class="vertical__line"></div>
+                    <div class="teacher__name">
+                        <p class="teacher__text" style="font-weight: 600;">Categories:</p>
+                        <p class="teacher__text">กลุ่ม ผู้ตรวจสอบ (Certificate)</p>
+                    </div>
+                </div>
+                <div class="carousel-container">
+                    <div class="carousel-main">
+                        <img id="main-image" src="/images/thermo3.png" alt="drone__banner" width="100%" class="mt-3">
+                    </div>
+                    <div class="carousel-thumbnails" id="thumbnails">
+                        <img src="/images/thermo3.png" alt="thumbnail 1" class="thumbnail active" data-index="0">
+                        <img src="/images/equipment.jpg" alt="Thumbnail 2" class="thumbnail" data-index="1">
+                        <img src="/images/equipment__2.JPG" alt="Thumbnail 3" class="thumbnail" data-index="2">
+                    </div>
+                    <!-- Navigation Buttons -->
+                    <button id="prev-button" class="carousel-arrow"><i class="ri-arrow-left-s-line"></i></button>
+                    <button id="next-button" class="carousel-arrow"><i class="ri-arrow-right-s-line"></i></button>
+                </div>
+
+                <!-- Add Image Form -->
+                <!-- <form id="add-image-form" class="mt-4">
+                    <div class="mb-3">
+                        <label for="image-upload" class="form-label">Upload Image</label>
+                        <input type="file" id="image-upload" class="form-control" accept="image/*" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Image</button>
+                    <p id="error-message" class="text-danger mt-2" style="display: none;">You can only add up to 10 images!</p>
+                </form> -->
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-4">
+                <div class="price__detail">
+                    <p class="price">89,000.-</p>
+                    <button class="register__link"><a href="#">ลงทะเบียนคอร์สนี้</a></button>
+                    <button class="cart__link"><a href="#"><img src="/images/cart.png" alt="cart">&nbsp;&nbsp;
+                            เพิ่มลงในตะกร้า</a></button>
+                    <div class="line__cart"></div>
+                    <p class="course__detail">ข้อมูลคอร์สเรียน</p>
+                    <div class="container">
+                        <div class="row p-2">
+                            <div class="col-8 col-sm-8 col-md-8">
+                                <img src="/images/duration.png" alt="duration">
+                                <span>&nbsp;&nbsp;Duration</span>
+                            </div>
+                            <div class="col-4 col-sm-4 col-md-4">
+                                <p class="text__align">4 day</p>
+                            </div>
+                        </div>
+                        <div class="row p-2">
+                            <div class="col-8 col-sm-8 col-md-8">
+                                <img src="/images/bell.png" alt="bell">
+                                <span>&nbsp;&nbsp;Lectures</span>
+                            </div>
+                            <div class="col-4 col-sm-4 col-md-4">
+                                <p class="text__align">10</p>
+                            </div>
+                        </div>
+                        <div class="row p-2">
+                            <div class="col-8 col-sm-8 col-md-8">
+                                <img src="/images/quiz.png" alt="quiz">
+                                <span>&nbsp;&nbsp;Quizzes</span>
+                            </div>
+                            <div class="col-4 col-sm-4 col-md-4">
+                                <p class="text__align">3</p>
+                            </div>
+                        </div>
+                        <div class="row p-2">
+                            <div class="col-8 col-sm-9 col-md-9">
+                                <img src="/images/like.png" alt="like">
+                                <span>&nbsp;&nbsp;Pass Percentage</span>
+                            </div>
+                            <div class="col-4 col-sm-3 col-md-3">
+                                <p class="text__align">60</p>
+                            </div>
+                        </div>
+                        <div class="row p-2">
+                            <div class="col-8 col-sm-8 col-md-8">
+                                <img src="/images/user.png" alt="user">
+                                <span>&nbsp;Number of people enrolled</span>
+                            </div>
+                            <div class="col-4 col-sm-4 col-md-4">
+                                <p class="text__align">60/100</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line__cart"></div>
+                    <p class="certificate__align">Certification</p>
+                    <p class="certificate__align__text">Lorem Ipsum is simply dummy text of the printing and typesetting
+                        industry. Lorem Ipsum has been the industry's standard</p>
+                    <img src="/images/certificate.png" alt="certificate" class="certificate__image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="overlay-container mt-5">
+
+        <div class="overlay-image-text">
+            <p><strong>หลักสูตร “ผู้เชี่ยวชาญการถ่ายภาพความร้อน ระดับ 2 (Level II Infrared Thermographer)”</strong>
+                เพื่อให้ผู้เข้ารับการฝึกอบรมเข้าใจปัญหา เสริมทักษะและสามารถขั้นตอนวิธีการตรวจสอบ (Written Inspection Procedure) วิธีการในการใช้งานกล้องถ่ายภาพความร้อนอย่างถูกต้อง การบำรุงรักษา ซึ่งการฝึกอบรมในครั้งนี้จะได้รับการถ่ายทอดจากผู้มีประสบการณ์ตรง ไม่ใช่แค่พื้นฐานการทำงาน แต่รวมไปถึงประเด็นสำคัญของคุณสมบัติเฉพาะของอุปกรณ์ให้ใช้งานได้เกิดประสิทธิภาพสูงสุด ได้เรียนรู้ เทคนิคการใช้งานและขั้นตอนการทำรายงานที่ถูกต้อง น่าเชื่อถือ ที่จะนำไปใช้ร่วมกับแผนการบำรุงรักษาเชิงพยากรณ์ (Predictive Maintenance) และเชิงป้องกัน (Predictive Maintenance) ได้อย่างมีประสิทธิภาพ มีความเป็นมืออาชีพ
+            </p>
+        </div>
+    </div>
+    <div class="detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 course__text">รายละเอียดคอร์สเรียน</div>
+                <div class="col-md-12 course__text__2">คอร์สนี้เหมาะกับใคร</div>
+                <div class="col-md-12">
+                    <ul class="unorder">
+                        <li>บุคคลทั่วไป, นักวิชาการ, นักศึกษา อายุ 20 ปีขึ้นไป </li>
+                        <li>สุขภาพกายและสุขภาพจิตดี / ต้องไม่เป็นผู้ตาบอดสี</li>
+                        <li>วิศวกร/สถาปนิก/ช่างเทคนิค (ช่างไฟฟ้า, ช่างกล, ช่างโยธา เป็นต้น)</li>
+                        <li>เจ้าหน้าที่ตรวจสอบความปลอดภัย (จป. วิชาชีพ)</li>
+                    </ul>
+                </div>
+                <div class="col-md-12 course__text__2">โดรนที่ใช้ในการสอน</div>
+                <div class="col-md-12">
+                    <ul class="unorder">
+                        <li>กล้องถ่ายภาพความร้อน FLUKE, Guide Sensmart</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 lecture">รายละเอียดบทเรียน</div>
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="question__block mt-2">
+                    <i class="ri-arrow-down-s-line plus__icon" id="pi_1"></i>
+                    <i class="ri-arrow-up-s-line subtract__icon" id="si_1"></i>
+                    <span class="question__text">หลักการและทฤษฎี (Principle and Theory)
+                         </span>
+                </div>
+                <div class="answer__block" id="ab_1">
+                    <span class="answer__text">
+                        <ol>
+                            <li>ทบทวนพื้นฐานหลักสูตร ระดับ 2 (Review of Level.2)</li>
+                            <li>หลักการถ่ายโอนความร้อนขั้นสูง (Advance Heat Transfer)</li>
+                            <li>The Nature of Heat</li>
+                            <li>Heat Flow Exothermic และ Endothermic</li>
+                        </ol>
+                    </span>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="question__block mt-2">
+                    <i class="ri-arrow-down-s-line plus__icon" id="pi_2"></i>
+                    <i class="ri-arrow-up-s-line subtract__icon" id="si_2"></i>
+                    <span class="question__text">เครื่องมือและคุณสมบัติวัตถุ (Equipment and Material)
+                         </span>
+                </div>
+                <div class="answer__block" id="ab_2">
+                    <span class="answer__text">
+                        <ol>
+                            <li>Contact Temperature Measurement Equipment</li>
+                            <li>Non-contact Imaging and Temp Measurement Instruments Devices</li>
+                            <li>Performance Parameters of IR Cameras IR camera and associated equipment</li>
+                        </ol>
+                    </span>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="question__block mt-2">
+                    <i class="ri-arrow-down-s-line plus__icon" id="pi_3"></i>
+                    <i class="ri-arrow-up-s-line subtract__icon" id="si_3"></i>
+                    <span class="question__text">ข้อมูลด้านเทคนิค (Techniques) 
+                         </span>
+                </div>
+                <div class="answer__block" id="ab_3">
+                    <span class="answer__text">
+                        <ol>
+                            <li>การสอบเทียบและการทวนสอบผล (Calibration & Verification of Infrared Systems) </li>
+                            <li>การคำนวณค่าความสามารถในการแผ่นรังสีความร้อน (Emissivity Calculation)</li>
+                            <li>การคำนวณค่าความสามารถในการส่งผ่าน รังสีความร้อน Reflectivity Calculation</li>
+                            <li>การคำนวณค่าความสามารถในการทะลุรังสีความร้อน Transmissivity Calculation</li>
+                            <li>ทวบทวนด้านเทคนิคการทดสอบแบบ Passive and Active Application Techniques</li>
+                        </ol>
+                    </span>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="question__block mt-2">
+                    <i class="ri-arrow-down-s-line plus__icon" id="pi_4"></i>
+                    <i class="ri-arrow-up-s-line subtract__icon" id="si_4"></i>
+                    <span class="question__text">ขั้นตอนปฏิบัติและมาตรฐานสากลที่เกี่ยวข้อง (Existing Infrared and Related Standards)  
+                         </span>
+                </div>
+                <div class="answer__block" id="ab_4">
+                    <span class="answer__text">
+                        <ol>
+                            <li>ASNT – American Society for Non Destructive Testing (NDT)</li>
+                            <li>ASTM – American Society for Testing and Materials</li>
+                            <li>ANSI – American National Standards Institute</li>
+                            <li>IEEE – Institute of Electrical and Electronics Engineers</li>
+                            <li>ISO/IEC – International standard Organization and International Electrotechnical Commission</li>
+                            <li>Safety, Codes and Standards</li>
+                        </ol>
+                    </span>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <div class="question__block mt-2">
+                    <i class="ri-arrow-down-s-line plus__icon" id="pi_5"></i>
+                    <i class="ri-arrow-up-s-line subtract__icon" id="si_5"></i>
+                    <span class="question__text">การตรียมการและการบริหารจัดการ (Infrared Program Initiation and Management) Preparing for ASNT Level III IR/T Examination  
+                         </span>
+                </div>
+                <div class="answer__block" id="ab_5">
+                    <span class="answer__text">
+                        <ol>
+                            <li>เข้าใจขั้นตอนการตีความและการบริหารจัดการการตรวจสอบด้วยเทคโนโลยีภาพความร้อน(Thermography Program Implementation and Management)</li>
+                            <li>เข้าใจเกี่ยวกับมาตฐานและวุฒิบัตรตามมาตรฐาน ASNT SNT-TC-1A และมาตรฐาน ANSI/ASNT CP-189 (Understanding Various Certification Procedures)</li>
+                            <li>การเลือกใช้มาตรฐานและการเขียนวิธีการตรวจสอบ Inspection procedure ที่เหมาะสม (Written Inspection Procedures and Development)</li>
+                            <li>การบริหารจัดการผู้ตรวจภาพความร้อนในระดับ 1 และระดับ 2 (Managing Level I and II Thermographers)</li>
+                            <li>กรณีศึกษาและแนวทางการตรวจสอบ (Case Study and Application Overview) </li>
+                            <li>การวิเคราะห์และการเขียนรายงานการตรวจสอบ (Inspection Reporting)</li>
+                            <li>การจัดการข้อมูลและการจัดลำดับความสำคัญปัญหาที่ตรวจพบ (Database and Priority Management)</li>
+                            <li>การคิดต้นทุนการรับงานตรวจสอบ (Cost Justification)</li>
+                            <li>การใช้งานซอฟต์แวร์และฟังก์ชั่นที่สำคัญ (Specific Software and Application)</li>
+                            <li>การหลีกเลี่ยงความเข้าใจผิดเกี่ยวกับงานด้านการตรวจสอบด้วยกล้องอินฟราเรด</li>
+                            <li>การเตรียมตัวเพื่อสอบ ASNT NDT Level III ในสาขา IR/T (Preparing for ASNT Level III IR/T
+                                Examination)
+                                </li>
+                        </ol>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container advantage__margin__align">
+        <p class="advantage">สิ่งที่จะได้รับจากคอร์สเรียนนี้</p>
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="advantage__first">
+                    <div>
+                        <img src="/images/correct.png" alt="correct">
+                    </div>
+                    <p class="advantage__first__text">
+                    สามารถเป็นที่ยอมรับการเป็นผู้ตรวจภาพความร้อน ระดับ 3 ในระดับสากลและระดับชาติ </p>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="advantage__second">
+                    <div>
+                        <img src="/images/correct.png" alt="correct">
+                    </div>
+                    <div>
+                        <p class="advantage__first__text">สามารถรับรองผลการวิเคราะห์และแก้ไขปัญหาได้อย่างถูกต้อง</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="advantage__third">
+                    <div style="padding-top: 0.9rem;">
+                        <img src="/images/correct.png" alt="correct">
+                    </div>
+                    <div>
+                        <p class="advantage__first__text">
+                            สามารถเข้าใจมาตรฐานการตรวจสอบแบบไม่ทำลาย (Non Destructive Testing, NDT) ตามมาตรฐานสากล ASNT SNT-TC-1A และมาตรฐาน ANSI/ASNT CP-189
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="advantage__fourth">
+                    <div>
+                        <img src="/images/correct.png" alt="correct">
+                    </div>
+                    <div>
+                        <p class="advantage__fourth__text">สามารถเขียนวิธีการตรวจสอบ (Inspection Procedure) ได้อย่างถูกต้อง</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="advantage__fourth">
+                    <div>
+                        <img src="/images/correct.png" alt="correct">
+                    </div>
+                    <div>
+                        <p class="advantage__fourth__text">สามารถใช้งานกล้องภาพความร้อน (Thermal Camera) และซอฟต์แวร์ (Software) วิเคราะห์ภาพความร้อนได้ถูกต้อง </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="advantage__fourth">
+                    <div>
+                        <img src="/images/correct.png" alt="correct">
+                    </div>
+                    <div>
+                        <p class="advantage__fourth__text">สามารถเขียนรายงาน (Reporting) ได้ถูกต้องและเป็นที่ยอมรับตามมาตรฐานสากล</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="advantage__fourth">
+                    <div>
+                        <img src="/images/correct.png" alt="correct">
+                    </div>
+                    <div>
+                        <p class="advantage__fourth__text">สามารถเซ็นต์รับรองเอกสารวิธีการตรวจสอบและรับรองรายงานการตรวจสอบ ของผู้ตรวจภาพความร้อน ระดับ 1 และระดับ 2 ได้ (Report Approval)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6">
+                <div class="advantage__fourth">
+                    <div>
+                        <img src="/images/correct.png" alt="correct">
+                    </div>
+                    <div>
+                        <p class="advantage__fourth__text">สามารถเลื่อนระดับความสามารถจาก ระดับ 2 ขึ้นสู่ระดับ 3 และเป็นที่ยอมรับในระดับสากล</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img src="/images/organization.png" alt="organization" width="100%">
+    <p class="learn">ภาพบรรยากาศ การเรียน การสอน</p>
+    <div class="d-flex flex-row gap-2 mt-5 mb-5">
+        <div class="d-flex flex-column gap-2">
+            <div>
+                <img src="/images/1.png" alt="1" width="100%">
+            </div>
+            <div class="d-flex flex-row gap-2">
+                <div>
+                    <img src="/images/2.png" alt="2" width="100%">
+                </div>
+                <div>
+                    <img src="/images/3.png" alt="3" width="100%">
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="/images/4.png" alt="4" width="100%">
+        </div>
+    </div>
+    <div class="body__container">
+        <div class="gallery">
+            <div class="gallery-container">
+                <img src="/images/5.png" alt="1" class="gallery-item gallery-item-1" data-index="1">
+                <img src="/images/6.png" alt="2" class="gallery-item gallery-item-2" data-index="2">
+                <img src="/images/7.png" alt="3" class="gallery-item gallery-item-3" data-index="3">
+                <img src="/images/8.png" alt="4" class="gallery-item gallery-item-4" data-index="4">
+                <img src="/images/9.png" alt="5" class="gallery-item gallery-item-5" data-index="5">
+            </div>
+            <div class="gallery-controls">
+
+            </div>
+        </div>
+    </div>
+    <div class="footer__block">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="d-flex flex-column">
+                        <div>
+                            <img src="/images/logo_dark.png" alt="logo-dark" class="img__dark">
+                        </div>
+                        <div>
+                            <p class="text__white">พัทยา โดรน แอนด์ โรโบติกส์ เซ็นเตอร์ เลขที่ 362/24 หมู่ 10
+                                ตำบลห้วยใหญ่</p>
+                            <p class="text__white">อำเภอบางละมุง จังหวัดชลบุรี รหัสไปรษณีย์ 20150</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-5">
+
+                    <p class="white-title">
+                        ช่องทางติดต่อเรา
+                    </p>
+
+                    <div class="d-flex flex-row">
+                        <div class="icon__align">
+                            <img src="/images/facebook1.png" alt="facebook-icon">
+                        </div>
+                        <p class="social__text me-5"><a
+                                href="https://www.facebook.com/profile.php?id=61558845597524">PDRC:
+                                Pattaya Drone
+                                and Robotics Center</a></p>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <div class="icon__align">
+                            <img src="/images/telephone1.png" alt="telephone1">
+                        </div>
+                        <p class="social__text">+66 (0) 3811 1860, +66 (0) 6 4654 4664</p>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <div class="icon__align">
+                            <img src="/images/website1.png" alt="website1">
+                        </div>
+                        <p class="social__text "><a href="https://www.pattayapdrc.com/">www.pattayapdrc.com</a></p>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <div class="icon__align">
+                            <img src="/images/mail1.png" alt="mail1">
+                        </div>
+                        <p class="social__text ">pdrc@systronics.co.th</p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="d-flex flex-column">
+                        <p class="white-title text__right">
+                            ผังเว็บไซต์
+                        </p>
+                        <div class="row">
+                            <div class="col-12 col-md-12 col-lg-12">
+                                <div class="d-flex flex-row gap-5">
+                                    <div class="d-flex flex-column">
+                                        <p class="text__white text__left"><a href="index.html">Home</a></p>
+                                        <p class="text__white text__left"><a href="course.html">Course</a></p>
+                                        <p class="text__white text__left"><a href="activities.html">Activities</a></p>
+                                        <p class="text__white text__left"><a href="knowledge_sharing.html">knowledge
+                                                Sharing</a></p>
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <p class="text__white text__left"><a href="about.html">About Us</a></p>
+                                        <p class="text__white text__left"><a href="contact.html">Contact Us</a></p>
+                                        <p class="text__white text__left"><a href="faq.html">FAQ</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/course__detail.js"></script>
+    <script src="/js/course.js"></script>
+    <script src="/js/faq.js"></script>
+    <script src="/js/script.js"></script>
+</body>
+</html>
