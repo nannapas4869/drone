@@ -1,0 +1,10 @@
+.bg-teacher {
+    width: 100%;
+    background-color: #F3F3F3 !important;
+    height: auto;
+}
+.profess-teacher {
+    font-size: 90px;
+    font-weight: 700;
+    margin-bottom: 8rem;
+}
