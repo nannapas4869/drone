@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +11,14 @@
     <link rel="stylesheet" href="css/teacher.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
     <title>Drone Project</title>
 </head>
+
 <body>
     <header>
         <div class="container-custom">
@@ -77,15 +84,15 @@
                             </div>
                         </li>
                         <li class="nav-link" style="--i: 1.35s">
-                            <a href="#"  class="active">About Us</a>
+                            <a href="#" class="active">About Us</a>
                             <div class="dropdown-2">
                                 <ul>
                                     <li class="dropdown-link">
-                                        <a href="about.html"><img src="/images/reactangle.png"
-                                                alt="rectangle" width="10" class="rectangle__image"> ประวัติบริษัท</a>
+                                        <a href="about.html"><img src="/images/reactangle.png" alt="rectangle"
+                                                width="10" class="rectangle__image"> ประวัติบริษัท</a>
                                     </li>
                                     <li class="dropdown-link">
-                                        <a href="teachers.html"  class="active" id="teacher__link"><img
+                                        <a href="teachers.html" class="active" id="teacher__link"><img
                                                 src="/images/reactangle.png" alt="rectangle" width="10"
                                                 class="rectangle__image">ประวัติครูผู้สอน </a>
                                     </li>
@@ -94,7 +101,7 @@
                         </li>
                         <li class="nav-link" style="--i: 1.35s">
                             <a href="contact.html">Contact Us</a>
-                        
+
                         </li>
                         <li class="nav-link" style="--i: 1.35s">
                             <a href="faq.html">FAQ</a>
@@ -124,23 +131,72 @@
             </div>
         </div>
     </header>
-    <!-- <div class="d-flex flex-column justify-content-center">
-        <div>
-            <img src="./images/PDRC-logo.svg" alt="PDRC" class="logo__teacher">
-        </div>
-    </div> -->
 
     <div class="d-flex flex-column align-items-center  bg-teacher ">
-        <img 
-            src="./images/PDRC-logo.svg" 
-            alt="PDRC" 
-            class="img-fluid" 
-            style="max-width: 150px; height: auto; margin-top: 2rem; margin-bottom: 7rem;" 
-        />
+        <img src="./images/PDRC-logo.svg" alt="PDRC" class="img-fluid "
+            style="max-width: 150px; height: auto; margin-top: 2rem; margin-bottom: 7rem;" />
         <p class="profess-teacher"><i>ประวัติครูผู้สอน</i></p>
     </div>
-   
+
+    <div class="d-flex flex-row gap-4">
+        <div class="my-bg-container">
+             <img src="./images/jakkrit.png" alt="Jakkrit"
+                    class="img-fluid jakkkrit  animate-only-image animate__animated animate__fadeInTopLeft  ">
+            <div class="owl-carousel owl-theme">
+               <div class="item">
+                <p class="overlay-text animate-only-image animate__animated animate__fadeInUp  animate__slow">
+
+                    <span class="teacher__name">นายจักรกฤษณ์ อุปยโส</span> <br><br>
+                    <span class="graduated">จบการศึกษา</span>
+
+                <ul class="align-ul animate-only-image animate__animated animate__fadeInUp  animate__slow">
+                    <li>จบวิศวกรรมศาสตร์ <br> สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</li>
+                    <li>จบครูการบินอากาศยานไร้คนขับ (Instructor Remote Pilot Certificate, <br>IRPC)
+                        สถาบันเทคโนโลยีป้องกันประเทศ</li>
+                </ul>
+                </p>
+               </div>
+                <div class="item">
+                    <p class="overlay-text animate-only-image animate__animated animate__fadeInUp  animate__slow">
+
+                    <span class="teacher__name">นายจักรกฤษณ์ อุปยโส</span> <br><br>
+                    <span class="graduated">จบการศึกษา</span>
+
+                <ul class="align-ul animate-only-image animate__animated animate__fadeInUp  animate__slow">
+                    <li>จบวิศวกรรมศาสตร์ <br> สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</li>
+                    <li>จบครูการบินอากาศยานไร้คนขับ (Instructor Remote Pilot Certificate, <br>IRPC)
+                        สถาบันเทคโนโลยีป้องกันประเทศ</li>
+                </ul>
+                </p>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+          $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 3,
+            nav: false,
+            dots: true,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            items: 1,
+          });
+        });
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
     <script src="/js/teacher.js"></script>
     <script src="/js/script.js"></script>
+
 </body>
+
 </html>

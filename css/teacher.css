@@ -8,3 +8,69 @@
     font-weight: 700;
     margin-bottom: 8rem;
 }
+.background__teacher {
+    border-radius: 99px !important;
+    display: block;
+    margin: auto;
+}
+
+  
+.my-bg-container {
+position: relative;
+width: 1500px;           /* or a specific width */
+min-height: 400px;     /* give it some height so the background is visible */
+background: url("../images/background.png") no-repeat center center;
+background-size: cover; /* makes the bg image responsive (cover the container) */
+border-radius: 48px;
+display: block;
+margin: auto;
+}
+
+.jakkrit {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+z-index: 1;
+/* any sizing you need for jakkrit.png */
+width: 150px;  
+height: auto;
+opacity: 0; /* เริ่มต้นโปร่งใส */
+transform: translateY(20px); /* เริ่มจากตำแหน่งที่เลื่อนลงเล็กน้อย */
+animation: fadeIn 3s ease-in forwards; 
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* เริ่มต้นโปร่งใส */
+    transform: translateY(20px); /* เริ่มจากตำแหน่งที่เลื่อนลง */
+  }
+  to {
+    opacity: 1; /* ปลายทางมองเห็นได้ชัด */
+    transform: translateY(0); /* เลื่อนกลับตำแหน่งเดิม */
+  }
+}
+.overlay-text {
+    position: absolute; 
+    top: 50%;     
+    left: 47%;     
+    transform: translate(-50%, -50%); 
+    color: #fff;    
+    margin-top: 0rem;
+}
+.teacher__name {
+    font-size: 40px;
+}
+.graduated {
+    font-size: 20px;
+    margin-top: 2rem;
+}
+.align-ul {
+    list-style: circle;
+    position: absolute; 
+    top: 50%;     
+    left: 47%;     
+    transform: translate(-50%, -50%); 
+    color: #fff;    
+    margin-top: 10rem;
+    font-size: 25px;
+}
