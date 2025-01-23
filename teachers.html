@@ -11,12 +11,35 @@
     <link rel="stylesheet" href="css/teacher.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
     <title>Drone Project</title>
+    <script>
+        let currentIndex = 0;
+        $(initCarouselText);
+        function initCarouselText(){
+            $(".overlay-text").each(function(index, element){
+                if(index > 0){
+                    $(this).animate({'opacity': 0,height: "0"}, 0);
+                    $(this).hide();
+                }
+                let autoHeight = $(this).css('height', 'auto').height()*2;
+                $(this).css('height', autoHeight);
+            });
+
+        }
+
+        function transitionCarouselText(indexText){
+            $(".overlay-text:eq("+currentIndex+")").animate({'opacity': 0,height: "0"}, 500, function(){ $(this).hide(); });
+            currentIndex = indexText;
+            let autoHeight = $(".overlay-text:eq("+currentIndex+")").css('height', 'auto').height();
+            $(".overlay-text:eq("+currentIndex+")").show().animate({'opacity': 1, height: "+="+autoHeight}, 1000);
+        }
+    </script>
 </head>
 
 <body>
@@ -141,57 +164,36 @@
     <div class="d-flex flex-row gap-4">
         <div class="my-bg-container">
              <img src="./images/jakkrit.png" alt="Jakkrit"
-                    class="img-fluid jakkkrit  animate-only-image animate__animated animate__fadeInTopLeft  ">
-            <div class="owl-carousel owl-theme">
-               <div class="item">
-                <p class="overlay-text animate-only-image animate__animated animate__fadeInUp  animate__slow">
+                    class="img-fluid jakkkrit  ">
+            <div class="align__block__teacher__text">
+                <div class="overlay-text">
 
                     <span class="teacher__name">นายจักรกฤษณ์ อุปยโส</span> <br><br>
                     <span class="graduated">จบการศึกษา</span>
-
-                <ul class="align-ul animate-only-image animate__animated animate__fadeInUp  animate__slow">
-                    <li>จบวิศวกรรมศาสตร์ <br> สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</li>
-                    <li>จบครูการบินอากาศยานไร้คนขับ (Instructor Remote Pilot Certificate, <br>IRPC)
-                        สถาบันเทคโนโลยีป้องกันประเทศ</li>
-                </ul>
-                </p>
-               </div>
-                <div class="item">
-                    <p class="overlay-text animate-only-image animate__animated animate__fadeInUp  animate__slow">
-
-                    <span class="teacher__name">นายจักรกฤษณ์ อุปยโส</span> <br><br>
-                    <span class="graduated">จบการศึกษา</span>
-
-                <ul class="align-ul animate-only-image animate__animated animate__fadeInUp  animate__slow">
-                    <li>จบวิศวกรรมศาสตร์ <br> สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</li>
-                    <li>จบครูการบินอากาศยานไร้คนขับ (Instructor Remote Pilot Certificate, <br>IRPC)
-                        สถาบันเทคโนโลยีป้องกันประเทศ</li>
-                </ul>
-                </p>
+                    <ul>
+                        <li>จบวิศวกรรมศาสตร์ <br> สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</li>
+                        <li>จบครูการบินอากาศยานไร้คนขับ (Instructor Remote Pilot Certificate, <br>IRPC)
+                            สถาบันเทคโนโลยีป้องกันประเทศ</li>
+                    </ul>
                 </div>
-                
+                <div class="overlay-text">
+
+                    <span class="teacher__name">นายจักรกฤษณ์ อุปยโส2</span> <br><br>
+                    <span class="graduated">จบการศึกษา2</span>
+
+                    <ul>
+                        <li>จบวิศวกรรมศาสตร์ <br> สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</li>
+                        <li>จบครูการบินอากาศยานไร้คนขับ (Instructor Remote Pilot Certificate, <br>IRPC)
+                            สถาบันเทคโนโลยีป้องกันประเทศ</li>
+                    </ul>
+                </div>
+                <div class="d-flex flex-row justify-content-center align-items-end"><button class="dot_indicator"></button></div>
             </div>
         </div>
 
     </div>
 
-    </div>
-
-
-    <script>
-        $(document).ready(function () {
-          $(".owl-carousel").owlCarousel({
-            loop: true,
-            margin: 3,
-            nav: false,
-            dots: true,
-            autoplay: true,
-            autoplayTimeout: 3000,
-            items: 1,
-          });
-        });
-      </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <script src="/js/teacher.js"></script>
