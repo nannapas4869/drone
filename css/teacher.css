@@ -36,47 +36,214 @@ z-index: 1;
 /* any sizing you need for jakkrit.png */
 height: 1000px;
 }
-.overlay-text {
-    position: absolute; 
-    top: 50%;     
-    left: 56%;     
-    transform: translate(-50%, -50%); 
-    color: #fff;    
-    margin-top: 0rem;
+.absolute_teacher {
+    position: absolute;
+    top: 2%;
+    left:43%;
+    width: 50%;
+    height: 96%;
 }
+.relative_teacher {
+    position: relative;
+    padding-top:14rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: 100%;
+    height: 100%;
+
+}
+
 .teacher__name {
     font-size: 40px;
+    color: white;
+    font-weight: 700;
 }
-.graduated {
-    font-size: 20px;
-    margin-top: 2rem;
-}
-.align-ul {
-    list-style: circle;
-    position: absolute; 
-    top: 53%;     
-    left: 64%;     
-    transform: translate(-50%, -50%); 
-    color: #fff;    
-    margin-top: 10rem;
+.teacher__port__text {
     font-size: 25px;
+    color: white;
 }
-.button_teacher {
-    display:inline-block;
-    width:180px;
-    white-space: nowrap;
-    overflow:hidden !important;
-    text-overflow: ellipsis;
-}
-.dot_indicator {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border:none;
+.teacher_port__list {
+    list-style: circle;
+    color: white;
     position: relative;
-    bottom: 10px;
+    left: 30px;
+    line-height: 40px;
+    font-size: 22px;
+    font-weight: 400;
 }
-.align__block__teacher__text {
-    height:100%;
+.dot {
+ position: relative;
+ bottom: 20rem;
+}
+
+.circle__dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.white {
+    background-color: white;
+    border: 1px solid gray;
+}
+
+.gray {
+    background-color: gray;
+}
+
+.active_teacher {
+    background-color: white;
+    transform: scale(1.5);
+}
+
+.content {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.relative_teacher__2 {
+    position: relative;
+    padding-top:2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     width: 100%;
+    height: 14%;
+    bottom: 48rem;
+}
+.relative_teacher__3 {
+    position: relative;
+    padding-top:2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: 100%;
+    height: 14%;
+    bottom: 56rem;
+}
+.relative_teacher_akom {
+    position: relative;
+    padding-top:60rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: 100%;
+    height: 14%;
+    bottom: 56rem;
+}
+.bg__2 {
+    width:100%;
+    height: 300px;
+}
+.height__teacher {
+    height: 300px;
+}
+.circle__dot__teacher {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.teacher-red-border {
+    width: 90px;
+    height: 90px;
+    border-radius: 9999px;
+    border: 4px solid #DF1F2C;
+    background-image: url(/images/jakkrit_big.png);
+    background-size: cover;
+    background-position:top;
+    background-repeat: no-repeat;
+   
+}
+.teacher-red-border-2 {
+    width: 90px;
+    height: 90px;
+    border-radius: 9999px;
+    border: 4px solid #DF1F2C;
+    background-image: url(/images/teacher02-small.png);
+    background-size: cover;
+    background-position:top;
+    background-repeat: no-repeat;
+}
+.teacher-red-border-3 {
+    width: 90px;
+    height: 90px;
+    border-radius: 9999px;
+    border: 4px solid #DF1F2C;
+    background-image: url(/images/teacher03-small.png);
+    background-size: cover;
+    background-position:top;
+    background-repeat: no-repeat;
+}
+.teacher-red-border-4 {
+    width: 90px;
+    height: 90px;
+    border-radius: 9999px;
+    border: 4px solid #DF1F2C;
+    background-image: url(/images/teacher04-small.png);
+    background-size: cover;
+    background-position:top;
+    background-repeat: no-repeat;
+}
+.left_arrow_teacher,.left_arrow_teacher-3 {
+    width: 50px;
+    height: 50px;
+    border-radius: 9999px;
+    border: 2px solid #DF1F2C;
+    background-image: url(/images/leftarrow.png);
+    background-size: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.right_arrow_teacher,.right_arrow_teacher-4 {
+    width: 50px;
+    height: 50px;
+    border-radius: 9999px;
+    border: 2px solid #DF1F2C;
+    background-image: url(/images/rightarrow.png);
+    background-size: 12px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.teacher-red-border-6 {
+    width: 90px;
+    height: 90px;
+    border-radius: 9999px;
+    border: 4px solid #DF1F2C;
+    background-image: url(/images/teerayut.png);
+    background-size: cover;
+    background-position:top;
+    background-repeat: no-repeat;
+}
+.teacher-red-border-7 {
+    width: 90px;
+    height: 90px;
+    border-radius: 9999px;
+    border: 4px solid #DF1F2C;
+    background-image: url(/images/parinya.png);
+    background-size: cover;
+    background-position:top;
+    background-repeat: no-repeat;
+}
+.teacher-red-border-8 {
+    width: 90px;
+    height: 90px;
+    border-radius: 9999px;
+    border: 4px solid #DF1F2C;
+    background-image: url(/images/chonlatee.png);
+    background-size: cover;
+    background-position:top;
+    background-repeat: no-repeat;
+}
+.teacher-red-border-9 {
+    width: 90px;
+    height: 90px;
+    border-radius: 9999px;
+    border: 4px solid #DF1F2C;
+    background-image: url(/images/jarukit.png);
+    background-size: cover;
+    background-position:top;
+    background-repeat: no-repeat;
+}
+.dot-2 {
+    position: relative;
+    bottom: 3rem;
 }

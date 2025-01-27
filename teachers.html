@@ -1,204 +1,737 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./bootstrap/bootstrap.min.css" />
     <script src="./bootstrap/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="./fontawesome/all.min.css">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/teacher.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./fontawesome/all.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/teacher.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css"
+    />
     <title>Drone Project</title>
     <script>
-        let currentIndex = 0;
-        $(initCarouselText);
-        function initCarouselText(){
-            $(".overlay-text").each(function(index, element){
-                if(index > 0){
-                    $(this).animate({'opacity': 0,height: "0"}, 0);
-                    $(this).hide();
-                }
-                let autoHeight = $(this).css('height', 'auto').height()*2;
-                $(this).css('height', autoHeight);
-            });
+      let currentIndex = 0;
+      $(initCarouselText);
+      function initCarouselText() {
+        $(".overlay-text").each(function (index, element) {
+          if (index > 0) {
+            $(this).animate({ opacity: 0, height: "0" }, 0);
+            $(this).hide();
+          }
+          let autoHeight = $(this).css("height", "auto").height() * 2;
+          $(this).css("height", autoHeight);
+        });
+      }
 
-        }
-
-        function transitionCarouselText(indexText){
-            $(".overlay-text:eq("+currentIndex+")").animate({'opacity': 0,height: "0"}, 500, function(){ $(this).hide(); });
-            currentIndex = indexText;
-            let autoHeight = $(".overlay-text:eq("+currentIndex+")").css('height', 'auto').height();
-            $(".overlay-text:eq("+currentIndex+")").show().animate({'opacity': 1, height: "+="+autoHeight}, 1000);
-        }
+      function transitionCarouselText(indexText) {
+        $(".overlay-text:eq(" + currentIndex + ")").animate(
+          { opacity: 0, height: "0" },
+          500,
+          function () {
+            $(this).hide();
+          }
+        );
+        currentIndex = indexText;
+        let autoHeight = $(".overlay-text:eq(" + currentIndex + ")")
+          .css("height", "auto")
+          .height();
+        $(".overlay-text:eq(" + currentIndex + ")")
+          .show()
+          .animate({ opacity: 1, height: "+=" + autoHeight }, 1000);
+      }
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="container-custom">
-            <input type="checkbox" name="" id="check">
+      <div class="container-custom">
+        <input type="checkbox" name="" id="check" />
 
-            <div class="logo-container">
-                <img src="/images/PDRC-logo.svg" alt="logo" width="40">
-            </div>
-
-            <div class="nav-btn">
-                <div class="nav-links">
-                    <ul>
-                        <li class="nav-link" style="--i: .6s">
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li class="nav-link" style="--i: .85s">
-                            <a href="#">Course</a>
-                            <div class="dropdown">
-                                <ul>
-                                    <li class="dropdown-link">
-                                        <a href="course.html"> <img src="/images/reactangle.png" alt="rectangle"
-                                                width="10" class="rectangle__image"> กลุ่ม ผู้เริ่มต้น (Beginner)</a>
-                                    </li>
-                                    <li class="dropdown-link">
-                                        <a href="#professional"> <img src="/images/reactangle.png" alt="rectangle"
-                                                width="10" class="rectangle__image"> กลุ่ม นักบินโดรน
-                                            เพื่องานถ่ายภาพและวิดีโอ ระดับมืออาชีพ (Professional)</a>
-                                    </li>
-                                    <li class="dropdown-link">
-                                        <a href="#specialist"><img src="/images/reactangle.png" alt="rectangle"
-                                                width="10" class="rectangle__image"> กลุ่ม นักบินโดรน วิชาชีพเฉพาะทาง
-                                            (Specialist)</a>
-                                    </li>
-                                    <li class="dropdown-link">
-                                        <a href="#license"><img src="/images/reactangle.png" alt="rectangle" width="10"
-                                                class="rectangle__image"> กลุ่ม นักบินโดรน รับรองใบอนุญาตตามกฎหมาย
-                                            (License)</a>
-                                    </li>
-                                    <li class="dropdown-link">
-                                        <a href="#cert"><img src="/images/reactangle.png" alt="rectangle" width="10"
-                                                class="rectangle__image"> กลุ่ม ผู้ตรวจสอบ (Certificate)</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-link" style="--i: 1.1s">
-                            <a href="activities.html">Activities</a>
-                        </li>
-                        <li class="nav-link" style="--i: 1.35s">
-                            <a href="#">Knowledge Sharing</a>
-                            <div class="dropdown-2">
-                                <ul>
-                                    <li class="dropdown-link">
-                                        <a href="knowledge_sharing.html"><img src="/images/reactangle.png"
-                                                alt="rectangle" width="10" class="rectangle__image"> บทความ</a>
-                                    </li>
-                                    <li class="dropdown-link">
-                                        <a href="promo_document.html" id="promo-docs-link"><img
-                                                src="/images/reactangle.png" alt="rectangle" width="10"
-                                                class="rectangle__image">เอกสารประชาสัมพันธ์ </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-link" style="--i: 1.35s">
-                            <a href="#" class="active">About Us</a>
-                            <div class="dropdown-2">
-                                <ul>
-                                    <li class="dropdown-link">
-                                        <a href="about.html"><img src="/images/reactangle.png" alt="rectangle"
-                                                width="10" class="rectangle__image"> ประวัติบริษัท</a>
-                                    </li>
-                                    <li class="dropdown-link">
-                                        <a href="teachers.html" class="active" id="teacher__link"><img
-                                                src="/images/reactangle.png" alt="rectangle" width="10"
-                                                class="rectangle__image">ประวัติครูผู้สอน </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </li>
-                        <li class="nav-link" style="--i: 1.35s">
-                            <a href="contact.html">Contact Us</a>
-
-                        </li>
-                        <li class="nav-link" style="--i: 1.35s">
-                            <a href="faq.html">FAQ</a>
-                        </li>
-                        <li class="nav-link margin__left" style="--i: 1.35s;">
-                            <i class="ri-shopping-cart-2-fill red-cart"></i>
-                        </li>
-                        <li class="nav-link" style="--i: 1.35s">
-                            <select class="form-select">
-                                <option selected>TH</option>
-                                <option value="1">EN</option>
-                            </select>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="log-sign" style="--i: 1.8s">
-                    <a href="#" class="login__button">Log in</a>
-                    <a href="#" class="signup__button">Register</a>
-                </div>
-            </div>
-
-            <div class="hamburger-menu-container">
-                <div class="hamburger-menu">
-                    <div></div>
-                </div>
-            </div>
+        <div class="logo-container">
+          <img src="/images/PDRC-logo.svg" alt="logo" width="40" />
         </div>
+
+        <div class="nav-btn">
+          <div class="nav-links">
+            <ul>
+              <li class="nav-link" style="--i: 0.6s">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="nav-link" style="--i: 0.85s">
+                <a href="#">Course</a>
+                <div class="dropdown">
+                  <ul>
+                    <li class="dropdown-link">
+                      <a href="course.html">
+                        <img
+                          src="/images/reactangle.png"
+                          alt="rectangle"
+                          width="10"
+                          class="rectangle__image"
+                        />
+                        กลุ่ม ผู้เริ่มต้น (Beginner)</a
+                      >
+                    </li>
+                    <li class="dropdown-link">
+                      <a href="#professional">
+                        <img
+                          src="/images/reactangle.png"
+                          alt="rectangle"
+                          width="10"
+                          class="rectangle__image"
+                        />
+                        กลุ่ม นักบินโดรน เพื่องานถ่ายภาพและวิดีโอ ระดับมืออาชีพ
+                        (Professional)</a
+                      >
+                    </li>
+                    <li class="dropdown-link">
+                      <a href="#specialist"
+                        ><img
+                          src="/images/reactangle.png"
+                          alt="rectangle"
+                          width="10"
+                          class="rectangle__image"
+                        />
+                        กลุ่ม นักบินโดรน วิชาชีพเฉพาะทาง (Specialist)</a
+                      >
+                    </li>
+                    <li class="dropdown-link">
+                      <a href="#license"
+                        ><img
+                          src="/images/reactangle.png"
+                          alt="rectangle"
+                          width="10"
+                          class="rectangle__image"
+                        />
+                        กลุ่ม นักบินโดรน รับรองใบอนุญาตตามกฎหมาย (License)</a
+                      >
+                    </li>
+                    <li class="dropdown-link">
+                      <a href="#cert"
+                        ><img
+                          src="/images/reactangle.png"
+                          alt="rectangle"
+                          width="10"
+                          class="rectangle__image"
+                        />
+                        กลุ่ม ผู้ตรวจสอบ (Certificate)</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-link" style="--i: 1.1s">
+                <a href="activities.html">Activities</a>
+              </li>
+              <li class="nav-link" style="--i: 1.35s">
+                <a href="#">Knowledge Sharing</a>
+                <div class="dropdown-2">
+                  <ul>
+                    <li class="dropdown-link">
+                      <a href="knowledge_sharing.html"
+                        ><img
+                          src="/images/reactangle.png"
+                          alt="rectangle"
+                          width="10"
+                          class="rectangle__image"
+                        />
+                        บทความ</a
+                      >
+                    </li>
+                    <li class="dropdown-link">
+                      <a href="promo_document.html" id="promo-docs-link"
+                        ><img
+                          src="/images/reactangle.png"
+                          alt="rectangle"
+                          width="10"
+                          class="rectangle__image"
+                        />เอกสารประชาสัมพันธ์
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-link" style="--i: 1.35s">
+                <a href="#" class="active">About Us</a>
+                <div class="dropdown-2">
+                  <ul>
+                    <li class="dropdown-link">
+                      <a href="about.html"
+                        ><img
+                          src="/images/reactangle.png"
+                          alt="rectangle"
+                          width="10"
+                          class="rectangle__image"
+                        />
+                        ประวัติบริษัท</a
+                      >
+                    </li>
+                    <li class="dropdown-link">
+                      <a href="teachers.html" class="active" id="teacher__link"
+                        ><img
+                          src="/images/reactangle.png"
+                          alt="rectangle"
+                          width="10"
+                          class="rectangle__image"
+                        />ประวัติครูผู้สอน
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-link" style="--i: 1.35s">
+                <a href="contact.html">Contact Us</a>
+              </li>
+              <li class="nav-link" style="--i: 1.35s">
+                <a href="faq.html">FAQ</a>
+              </li>
+              <li class="nav-link margin__left" style="--i: 1.35s">
+                <i class="ri-shopping-cart-2-fill red-cart"></i>
+              </li>
+              <li class="nav-link" style="--i: 1.35s">
+                <select class="form-select">
+                  <option selected>TH</option>
+                  <option value="1">EN</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+
+          <div class="log-sign" style="--i: 1.8s">
+            <a href="#" class="login__button">Log in</a>
+            <a href="#" class="signup__button">Register</a>
+          </div>
+        </div>
+
+        <div class="hamburger-menu-container">
+          <div class="hamburger-menu">
+            <div></div>
+          </div>
+        </div>
+      </div>
     </header>
 
-    <div class="d-flex flex-column align-items-center  bg-teacher ">
-        <img src="./images/PDRC-logo.svg" alt="PDRC" class="img-fluid "
-            style="max-width: 150px; height: auto; margin-top: 2rem; margin-bottom: 7rem;" />
-        <p class="profess-teacher"><i>ประวัติครูผู้สอน</i></p>
+    <div class="d-flex flex-column align-items-center bg-teacher">
+      <img
+        src="./images/PDRC-logo.svg"
+        alt="PDRC"
+        class="img-fluid"
+        style="
+          max-width: 150px;
+          height: auto;
+          margin-top: 2rem;
+          margin-bottom: 7rem;
+        "
+      />
+      <p class="profess-teacher"><i>ประวัติครูผู้สอน</i></p>
     </div>
 
-    <div class="d-flex flex-row gap-4">
-        <div class="my-bg-container">
-             <img src="./images/jakkrit.png" alt="Jakkrit"
-                    class="img-fluid jakkkrit  ">
-            <div class="align__block__teacher__text">
-                <div class="overlay-text">
-
-                    <span class="teacher__name">นายจักรกฤษณ์ อุปยโส</span> <br><br>
-                    <span class="graduated">จบการศึกษา</span>
-                    <ul>
-                        <li>จบวิศวกรรมศาสตร์ <br> สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</li>
-                        <li>จบครูการบินอากาศยานไร้คนขับ (Instructor Remote Pilot Certificate, <br>IRPC)
-                            สถาบันเทคโนโลยีป้องกันประเทศ</li>
-                    </ul>
-                </div>
-                <div class="overlay-text">
-
-                    <span class="teacher__name">นายจักรกฤษณ์ อุปยโส2</span> <br><br>
-                    <span class="graduated">จบการศึกษา2</span>
-
-                    <ul>
-                        <li>จบวิศวกรรมศาสตร์ <br> สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง</li>
-                        <li>จบครูการบินอากาศยานไร้คนขับ (Instructor Remote Pilot Certificate, <br>IRPC)
-                            สถาบันเทคโนโลยีป้องกันประเทศ</li>
-                    </ul>
-                </div>
-                <div class="d-flex flex-row justify-content-center align-items-end"><button class="dot_indicator"></button></div>
+    <div class="">
+      <div class="my-bg-container">
+        <div class="first-person" id="first-person">
+          <div class="d-flex flex-row gap-4">
+            <div>
+              <img
+                src="./images/jakkrit.png"
+                alt="Jakkrit"
+                class="img-fluid jakkkrit"
+              />
             </div>
+            <div class="absolute_teacher">
+              <div class="relative_teacher">
+                <div class="content number-1">
+                  <p class="teacher__name">นายจักรกฤษณ์ อุปยโส</p>
+                  <p class="teacher__port__text">จบการศึกษา</p>
+                  <ul class="teacher_port__list">
+                    <li>
+                      จบวิศวกรรมศาสตร์
+                      สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง
+                    </li>
+                    <li>
+                      จบครูการบินอากาศยานไร้คนขับ (Instructor Remote Pilot
+                      Certificate, IRPC) สถาบันเทคโนโลป้องกันประเทศ
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="relative_teacher__2">
+                <div class="content number-2" style="display: none">
+                  <p class="teacher__name">นายจักรกฤษณ์ อุปยโส</p>
+                  <p class="teacher__port__text">ตำแหน่งปัจจุบัน</p>
+                  <ul class="teacher_port__list">
+                    <li>วิศวกรขาย บริษัทซิสทรอนิกส์</li>
+                    <li>
+                      ผู้อำนวยการ ศูนย์วิชาชีพอากาศยานไร้คนขับ พัทยา โดรน แอนด์
+                      โรโบติกส์เซ็นเตอร์
+                    </li>
+                    <li>
+                      ที่ปรึกษา บริษัท ซิสทรอนิกส์ อินส์แล็ป จำกัด
+                      ด้านการตรวจสอบ (Inspection)
+                      และศูนย์ปฏิบัติการสอบเทียบอุณหภูมิแบบไม่สัมผัส
+                      (Non-Contact Thermometer) มาตรฐาน ISO/IEC 17025
+                      (Calibration Laboratory) : ผู้เชี่ยวชาญภาพความร้อน
+                      Infrared Thermography Level (III) 03 ระดับ 3 จาก Institute
+                      of Infrared Thermography, IRT, USA
+                    </li>
+                    <li>
+                      ผู้เชี่ยวชาญ level 1 Airbone Ultrasonic Inspector
+                      (UTL1-00325), Canada
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="relative_teacher__3">
+                <div class="content number-3" style="display: none">
+                  <p class="teacher__name">นายจักรกฤษณ์ อุปยโส</p>
+                  <p class="teacher__port__text">ผลงาน</p>
+                  <ul class="teacher_port__list">
+                    <li>
+                      ผู้ฝึกสอนพิเศษ สมาคมตอบโต้ภัยพิบัติ ประเทศไทย (Disaster
+                      Response Associations Thailand)
+                    </li>
+                    <li>
+                      ผู้ฝึกสอนหลักสูตร "ผู้เชี่ยวชาญการถ่ายภาพความร้อน ระดับ 1"
+                    </li>
+                    <li>
+                      ผู้พัฒนาวิธีการตรวจสอบภาพความร้อน มาตรฐาน ISO/IEC17020
+                      (Inspection Body, IB) รายแรกในประเทศไทย
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="dot">
+                <div class="d-flex justify-content-center">
+                  <div
+                    class="circle__dot white active_teacher me-3"
+                    data-target="1"
+                  ></div>
+                  <div class="circle__dot gray me-3" data-target="2"></div>
+                  <div class="circle__dot gray" data-target="3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+        <div class="second-person" id="second-person" style="display:none">
+            <div class="d-flex flex-row gap-4">
+                <div>
+                  <img
+                    src="./images/rachata.png"
+                    alt="Jakkrit"
+                    class="img-fluid jakkkrit"
+                  />
+                </div>
+                <div class="absolute_teacher">
+                  <div class="relative_teacher">
+                    <div class="content number-1" style="display:none">
+                      <p class="teacher__name">นายรชฎ จันทรโชติ</p>
+                      <p class="teacher__port__text">จบการศึกษา</p>
+                      <ul class="teacher_port__list">
+                        <li>
+                            ประกาศนียบัตร ผู้นำยุคใหม่ในระบอบประชาธิปไตย (ปนป 13) สถาบันพระปกเกล้า 
+                        </li>
+                        <li>
+                            Basic VTOL UAV Certified : JOUAV
+                        </li>
+                        <li>
+                            หลักสูตรผู้เชี่ยวชาญความร้อน ระดับ 1 
+                        </li>
+                        <li>
+                            หลักสูตรรับรองครูอากาศยานไร้คนขับแบบปีกหมุน (IRPC#1) สถาบันเทคโนโลยีป้องกันประเทศ
+                        </li>
+                        <li>
+                            หลักสูตรรับรองผู้บังคับโดรนเกษตร (RAC#1) สถาบันเทคโนโลยีป้องกันประเทศ 
+                        </li>
+                        <li>
+                            ผู้ปฏิบัติงานอากาศยานไร้คนขับในระยะสายตา (RVC#1) สถาบันเทคโนโลยีป้องกันประเทศ 
+                        </li>
+                        <li>
+                            ผู้เชียวชาญการใช้โดรน Delivery DJI Academy 
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="relative_teacher__2">
+                    <div class="content number-2" style="display: none">
+                      <p class="teacher__name">นายรชฎ จันทรโชติ</p>
+                      <p class="teacher__port__text">ตำแหน่งปัจจุบัน</p>
+                      <ul class="teacher_port__list">
+                        <li>วิศวกรขาย บริษัทซิสทรอนิกส์</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="relative_teacher__3">
+                    <div class="content number-3" style="display: none">
+                      <p class="teacher__name">นายรชฎ จันทรโชติ</p>
+                      <p class="teacher__port__text">ผลงาน</p>
+                      <ul class="teacher_port__list">
+                        <li>
+                            ครูพิเศษการบินโดรน สถาบันเทคโนโลยีจิตรลดา
+                        </li>
+                        <li>
+                            ครูพิเศษผู้ปฏิบัติงานอากาศยานไร้คนขับในระยะสายตา สถาบันเทคโนโลยีป้องกันประเทศ
+                        </li>
+                        <li>
+                            วิทยากรให้ความรู้เรื่องโดรนช่วยเหลือด้านมนุษยธรรมและการบรรเทาสาธารณภัยทางทะเล ฐานทัพเรือสัตหีบ
+                        </li>
+                        <li>
+                            วิทยากรโครงการอบรมหลักสูตรอากาศยานไร้คนขับเพื่อระบบเกษตรอัจฉริยะ มหาวิทยาลัยราชภัฏรำไพพรรณี
+                        </li>
+                        <li>
+                            วิทยากรให้ความรู้ เทคโนโลยีอากาศยานไร้คนขับเพื่อการเกษตรวิถีใหม่ มหาวิทยาลัยนเรศวร จังหวัดพิษณุโลก
+                        </li>
+                        <li>
+                            วิทยากรให้ความรู้เกี่ยวกับการใช้โดรนในการกำจัดศัตรูพืชและเพิ่มผลผลิต วิทยาลัยเกษตรฯ ทุ่งกุลา จังหวัดกำแพงเพชร
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="dot">
+                    <div class="d-flex justify-content-center">
+                      <div
+                        class="circle__dot white active_teacher me-3"
+                        data-target="1"
+                      ></div>
+                      <div class="circle__dot gray me-3" data-target="2"></div>
+                      <div class="circle__dot gray" data-target="3"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="third-person" id="third-person" style="display:none">
+          <div class="d-flex flex-row ga p-4">
+              <div>
+                <img
+                  src="./images/akom.png"
+                  alt="akom"
+                  class="img-fluid jakkkrit"
+                />
+              </div>
+              <div class="absolute_teacher">
+                <div class="relative_teacher_akom">
+                  <div class="content number-1" style="display:none">
+                    <p class="teacher__name">นายอาคม พรรณนิกร</p>
+                    <p class="teacher__port__text">จบการศึกษา</p>
+                    <ul class="teacher_port__list">
+                      <li>
+                        ปริญญาตรี คณะนิเทศศาสตร์บัณฑิต (วารสารศาสตร์) มหาวิทยาลัยกรุงเทพ
+                      </li>
+                      <li>
+                        ปริญญาโท คณะศึกษาศาสตร์ (เทคโนโลยีการศึกษา) มหาวิทยาลัยเกษตรศาสตร์
+                      </li>
+                      <li>
+                        Remote Pilot Visual Line of Sight Certificate (RVC) Batch 9 (DTI-UTC)
+                      </li>
+                      <li>
+                        Remote Pilot Agriculture Certificate (RAC) Batch 2 (Easy (2018) Co., Ltd.)
+                      </li>
+                      <li>
+                        Level I (1) Certified Infrared Drone Thermography (IR ) Batch 1 (Systronics Co.,Ltd.)
+                      </li>
+                      <li>
+                        Level II (2) Certified Infrared Thermography (IR ) Batch 1 (Institute of Infrared Thermography (IRT) USA
+                      </li>
+                      <li>
+                        CW-007 VTOL UAV Pilot License Certificate Batch 1 (Systronics Co.,Ltd.)
+                      </li>
+                      <li>
+                        CW-40 VTOL UAV System Operation Training (JOUAV CHINA)
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="relative_teacher__2">
+                  <div class="content number-2" style="display: none">
+                    <p class="teacher__name">นายอาคม พรรณนิกร</p>
+                    <p class="teacher__port__text">ตำแหน่งปัจจุบัน</p>
+                    <ul class="teacher_port__list">
+                      <li>วิศวกรสนับสนุนด้านเทคนิค ฝ่ายอากาศยานไร้คนขับ บริษัท ซิสทรอนิกส์ จำกัด</li>
+                      <li>อาจารย์ ศูนย์วิชาชีพอากาศยานไร้คนขับ พัทยา โดรน แอนด์ โรโบติกส์ เซ็นเตอร์</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="relative_teacher__3">
+                  <div class="content number-3" style="display: none">
+                    <p class="teacher__name">นายอาคม พรรณนิกร</p>
+                    <p class="teacher__port__text">ผลงาน</p>
+                    <ul class="teacher_port__list">
+                      <li>
+                        ผู้ฝึกสอนหลักสูตรการใช้งานโดรนตรวจจับความร้อนสนับสนุนการบัญชาการณ์ รุ่นที่ 1 สนามฝึกดับเพลิงและกู้ภัย MTC 
+                      </li>
+                      <li>
+                        ผู้ฝึกสอนหลักสูตรการฝึกใช้งานโดรนเกษตร Remote Pilot Agriculture Certificate: RAC 
+                      </li>
+                      <li>
+                        วิทยากรภาคอากาศ หลักสูตรอบรมเชิงปฏิบัติการ Level 1 Certified Infrared Drone Thermography 
+                      </li>
+                      <li>
+                        ผู้ฝึกสอน (พิเศษ) บิน Simulator หลักสูตร หลักสูตรนักบินระบบอากาศยานไร้คนขับ Remote Pilot Visual Line of Sight   
+                        Certificate (RVC) สถาบันเทคโนโลยีป้องกันประเทศ 
+                     
+                      </li>
+                      <li>
+                        ผู้ฝึกสอน (พิเศษ) ภาคอากาศ หลักสูตรนักบินระบบอากาศยานไร้คนขับ Remote Pilot Visual Line of Sight Certificate 
+                        (RVC) สถาบันเทคโนโลยีป้องกันประเทศ
+                     
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="dot">
+                  <div class="d-flex justify-content-center">
+                    <div
+                      class="circle__dot white active_teacher me-3"
+                      data-target="1"
+                    ></div>
+                    <div class="circle__dot gray me-3" data-target="2"></div>
+                    <div class="circle__dot gray" data-target="3"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class="fourth-person" id="fourth-person" style="display:none">
+        <div class="d-flex flex-row gap-4">
+            <div>
+              <img
+                src="./images/pongpol.png"
+                alt="akom"
+                class="img-fluid jakkkrit"
+              />
+            </div>
+            <div class="absolute_teacher">
+              <div class="relative_teacher">
+                <div class="content number-1" style="display:none">
+                  <p class="teacher__name">นายปองพล พงศ์ฟูสาย</p>
+                  <p class="teacher__port__text">จบการศึกษา</p>
+                  <ul class="teacher_port__list">
+                    <li>
+                      จบประกาศนียบัตรวิชาชั้นสูง (ปวส.) สาขา เทคนิคควบคุมและซ่อมบำรุง
+    ระบบขนส่งทางราง วิทยาลัยการอาชีพเกาะคา
 
+                    </li>
+                    <li>
+                      Level I (1) Certified Infrared Drone Thermography (IR ) Batch 1 (Systronics Co.,Ltd.)
+
+
+                    </li>
+                    <li>
+                      CW-007 VTOL UAV Pilot License Certificate Batch 1 (Systronics Co.,Ltd.)
+
+                    </li>
+                    <li>
+                      CW-40 VTOL UAV System Operation Training (JOUAV CHINA)
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="relative_teacher__2">
+                <div class="content number-2" style="display: none">
+                  <p class="teacher__name">นายปองพล พงศ์ฟูสาย</p>
+                  <p class="teacher__port__text">ตำแหน่งปัจจุบัน</p>
+                  <ul class="teacher_port__list">
+                    <li>วิศวกรสนับสนุนด้านเทคนิค ฝ่ายอากาศยานไร้คนขับ บริษัท ซิสทรอนิกส์ จำกัด</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="relative_teacher__3">
+                <div class="content number-3" style="display: none">
+                  <p class="teacher__name">นายปองพล พงศ์ฟูสาย</p>
+                  <p class="teacher__port__text">ผลงาน</p>
+                  <ul class="teacher_port__list">
+                    <li>
+                      JOUAV: Fix wing & VTOL course, JOUAV Ltd., China 2021
+                    </li>
+                    <li>
+                      Remote Pilot Visual Line of Sight Certificate (RVC) Batch 8 (DTI-UTC)
+                    </li>
+                    <li>
+                      Instructor Remote Pilot Certificate (Multi-rotor) Batch 3 (DTI-UTC) 
+                    </li>
+                    <li>
+                      Remote Pilot Visual Line of Sight Certificate (RVC)-Fixed-Wing Batch 4 (DTI-UTC)
+                   
+                    </li>
+                    <li>
+                      Drone Specialist Delivery Type DJI Academy 2024
+                   
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="dot">
+                <div class="d-flex justify-content-center">
+                  <div
+                    class="circle__dot white active_teacher me-3"
+                    data-target="1"
+                  ></div>
+                  <div class="circle__dot gray me-3" data-target="2"></div>
+                  <div class="circle__dot gray" data-target="3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+      </div>
+      <div class="bg__2">
+        <div class="group__first">
+          <div
+            class="d-flex flex-row justify-content-center align-items-center gap-5 height__teacher"
+          >
+            <div>
+              <div class="left_arrow_teacher"></div>
+            </div>
+            <div>
+              <a href="#first-person">
+                <div class="teacher-red-border"></div>
+              </a>
+        
+            </div>
+            <div>
+                <a href="#second-person">
+                    <div class="teacher-red-border-2"></div>
+                </a>
+            </div>
+            <div>
+              <a href="#third-person">
+                <div class="teacher-red-border-3"></div>
+              </a>
+            </div>
+            <div>
+              <a href="#fourth-person">
+                <div class="teacher-red-border-4"></div>
+              </a>
+            </div>
+            <div>
+              <div class="right_arrow_teacher"></div>
+            </div>
+          </div>
+        </div>
+        <div class="group__second" style="display: none">
+          <div
+            class="d-flex flex-row justify-content-center align-items-center gap-5 height__teacher"
+          >
+            <div>
+              <div class="left_arrow_teacher-3"></div>
+            </div>
+            <div>
+              <div class="teacher-red-border-6"></div>
+            </div>
+            <div>
+              <div class="teacher-red-border-7"></div>
+            </div>
+            <div>
+              <div class="teacher-red-border-8"></div>
+            </div>
+            <div>
+              <div class="teacher-red-border-9"></div>
+            </div>
+            <div>
+              <div class="right_arrow_teacher-4"></div>
+            </div>
+          </div>
+        </div>
+        <div class="dot-2">
+          <div class="d-flex flex-row justify-content-center">
+            <div
+              class="circle__dot__teacher white active_teacher me-3"
+              data-target="1"
+            ></div>
+            <div class="circle__dot__teacher gray me-3" data-target="2"></div>
+          </div>
+        </div>
+      </div>
     </div>
 
-    
+    <script>
+    $(document).ready(function () {
+    // ฟังก์ชันแสดงกลุ่มของบุคคล (first-person หรือ second-person)
+    function togglePerson(personId) {
+        // ซ่อนเนื้อหาของบุคคลอื่นทั้งหมด
+        $(".first-person, .second-person, .third-person, .fourth-person").hide();
+
+        // แสดงเฉพาะบุคคลที่เลือก
+        $(`#${personId}`).fadeIn();
+
+        // รีเซ็ตจุด (dot) และเนื้อหาให้เริ่มต้นที่ data-target="1"
+        $(`#${personId} .circle__dot`).removeClass("white active_teacher").addClass("gray");
+        $(`#${personId} .circle__dot[data-target="1"]`).removeClass("gray").addClass("white active_teacher");
+
+        $(`#${personId} .content`).hide(); // ซ่อนเนื้อหาภายในทั้งหมด
+        $(`#${personId} .content.number-1`).fadeIn(); // แสดงเนื้อหาเริ่มต้น
+    }
+
+    // ฟังก์ชันแสดงข้อมูลตาม dot (data-target)
+    function toggleDot(personId, target) {
+        // ซ่อนเนื้อหาภายในทั้งหมด
+        $(`#${personId} .content`).hide();
+
+        // แสดงเนื้อหาที่ตรงกับ target
+        $(`#${personId} .content.number-${target}`).fadeIn();
+
+        // อัปเดตสถานะของจุด (dot)
+        $(`#${personId} .circle__dot`).removeClass("white active_teacher").addClass("gray");
+        $(`#${personId} .circle__dot[data-target="${target}"]`).removeClass("gray").addClass("white active_teacher");
+    }
+
+    // เมื่อคลิกที่ลิงก์หรือปุ่มสำหรับเปลี่ยนบุคคล
+    $("a[href='#first-person']").click(function (e) {
+        e.preventDefault(); // ป้องกัน anchor jump
+        togglePerson("first-person"); // แสดงข้อมูลของ first-person
+    });
+
+    $("a[href='#second-person']").click(function (e) {
+        e.preventDefault(); // ป้องกัน anchor jump
+        togglePerson("second-person"); // แสดงข้อมูลของ second-person
+    });
+    $("a[href='#third-person']").click(function (e) {
+        e.preventDefault(); // ป้องกัน anchor jump
+        togglePerson("third-person"); // แสดงข้อมูลของ second-person
+    });
+    $("a[href='#fourth-person']").click(function (e) {
+        e.preventDefault(); // ป้องกัน anchor jump
+        togglePerson("fourth-person"); // แสดงข้อมูลของ second-person
+    });
+    // เมื่อคลิกที่จุด (dot)
+    $(".circle__dot").click(function () {
+        const personId = $(this).closest(".first-person, .second-person, .third-person, .fourth-person").attr("id"); // ดึง ID ของบุคคล
+        const target = $(this).data("target"); // ดึงค่า target จาก dot
+        toggleDot(personId, target); // แสดงข้อมูลตาม target
+    });
+
+    // เริ่มต้นด้วย first-person
+    togglePerson("first-person");
+});
+
+
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <script src="/js/teacher.js"></script>
     <script src="/js/script.js"></script>
-
-</body>
-
+  </body>
 </html>
