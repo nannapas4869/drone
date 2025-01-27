@@ -34,7 +34,7 @@ left: 20%;
 transform: translate(-50%, -50%);
 z-index: 1;
 /* any sizing you need for jakkrit.png */
-height: 1000px;
+width: 670px;
 }
 .absolute_teacher {
     position: absolute;
@@ -246,4 +246,9 @@ height: 1000px;
 .dot-2 {
     position: relative;
     bottom: 3rem;
+}
+.row__teacher {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
 }
