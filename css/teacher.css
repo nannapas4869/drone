@@ -27,8 +27,72 @@ margin: auto;
 margin-bottom: 3rem;
 }
 
-.jakkkrit {
+.jakkrit {
 position: absolute;
+top: 50%;
+left: 20%;
+transform: translate(-50%, -50%);
+z-index: 1;
+/* any sizing you need for jakkrit.png */
+width: 670px;
+}
+.teerayut {
+    position: absolute;
+    top: 54%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    /* any sizing you need for jakkrit.png */
+    width: 670px;
+    }
+.parinya {
+    position: absolute;
+    top: 51%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    /* any sizing you need for jakkrit.png */
+    width: 670px;
+    }
+.chonlatee {
+    position: absolute;
+    top: 52%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    /* any sizing you need for jakkrit.png */
+    width: 670px;
+}
+.jarukit {
+    position: absolute;
+    top: 52%;
+    left: 23%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    /* any sizing you need for jakkrit.png */
+    width: 670px;
+}
+.akom {
+    position: absolute;
+top: 50%;
+left: 20%;
+transform: translate(-50%, -50%);
+z-index: 1;
+/* any sizing you need for jakkrit.png */
+width: 670px;
+}
+.rachata {
+    position: absolute;
+top: 50%;
+left: 20%;
+transform: translate(-50%, -50%);
+z-index: 1;
+/* any sizing you need for jakkrit.png */
+width: 670px;
+
+}
+.pongpol {
+     position: absolute;
 top: 50%;
 left: 20%;
 transform: translate(-50%, -50%);
@@ -251,4 +315,213 @@ width: 670px;
     display: flex;
     flex-direction: row;
     gap: 2rem;
+}
+@media screen and (max-width: 1655px) {
+    .my-bg-container {
+        width: 1300px;
+    }
+}
+@media screen and (max-width: 1530px) {
+    .my-bg-container {
+        width: 1100px;
+    }
+    .jakkrit {
+        position: absolute;
+        top: 25%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        /* any sizing you need for jakkrit.png */
+        width: 310px;
+        border-bottom: 7px solid white;
+        }
+    .rachata {
+       
+    position: absolute;
+    top: 25%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    /* any sizing you need for jakkrit.png */
+    width: 310px;
+    border-bottom: 7px solid white;
+    
+    }
+    .akom {
+        position: absolute;
+    top: 25%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    /* any sizing you need for jakkrit.png */
+    width: 310px;
+    border-bottom: 7px solid white;
+    
+    }
+    .pongpol {
+        position: absolute;
+        top: 25%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        /* any sizing you need for jakkrit.png */
+        width: 310px;
+        border-bottom: 7px solid white;
+    }
+    .teerayut {
+        position: absolute;
+        top: 25%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        /* any sizing you need for jakkrit.png */
+        width: 310px;
+        border-bottom: 7px solid white;
+    }
+    .parinya {
+        position: absolute;
+        top: 25%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        /* any sizing you need for jakkrit.png */
+        width: 310px;
+        border-bottom: 7px solid white;
+    }
+    .chonlatee {
+        position: absolute;
+        top: 25%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        /* any sizing you need for jakkrit.png */
+        width: 310px;
+        border-bottom: 7px solid white;
+    }
+    .jarukit {
+        position: absolute;
+        top: 25%;
+        left: 20%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        /* any sizing you need for jakkrit.png */
+        width: 310px;
+        border-bottom: 7px solid white;
+    }
+    .has_akom {
+        position: relative;
+        padding-top: 2rem !important;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        width: 100%;
+        height: 100%; 
+    }
+    .has_akom_3 {
+        position: relative;
+        padding-top:2rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        width: 100%;
+        height: 14%;
+        bottom: 66rem;
+    }
+    .is_parinya {
+        position: relative;
+        padding-top:2rem;
+        padding-left: 7rem;
+        padding-right: 3rem;
+        width: 100%;
+        height: 14%;
+        bottom: 56rem;
+    }
+    .teacher_port__list {
+        font-size:14px;
+    }
+    .align-center-one {
+        position: relative;
+    padding-top: 19rem;
+    /* padding-left: 3rem; */
+    /* padding-right: 3rem; */
+    width: 249%;
+    height: 100%;
+    right: 15rem;
+    }
+    .akom_align {
+        position: relative;
+        top: 14rem;
+    }
+    .relative_teacher__2 {
+        position: relative;
+    padding-top:2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    width: 197%;
+    height: 14%;
+    bottom: 41rem;
+    right: 15rem;
+    }
+    .relative_teacher__3 {
+        position: relative;
+        padding-top:2rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        width: 150%;
+        height: 14%;
+        bottom: 50rem;
+        right: 16rem;
+}
+    .chonlatee_align {
+        position: relative;
+        padding-top:2rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        width: 178%;
+        height: 14%;
+        bottom: 53rem;
+        right: 18rem;
+    }
+}
+@media screen and (max-width: 1140px) {
+    .my-bg-container {
+        width: 900px;
+    }
+    .teacher__name {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 934px) {
+    .my-bg-container {
+        width: 700px;
+    }
+    .jakkrit,  .rachata, .akom, .pongpol, .teerayut, .parinya, .chonlatee, .jarukit  {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        /* any sizing you need for jakkrit.png */
+        width: 160px;
+        border-bottom: 7px solid white;
+    }
+ 
+}
+@media screen and (max-width: 726px) {
+    .my-bg-container {
+        width: 500px;
+    }
+    .jakkrit,  .rachata, .akom, .pongpol, .teerayut, .parinya, .chonlatee, .jarukit  {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        /* any sizing you need for jakkrit.png */
+        width: 160px;
+        border-bottom: 7px solid white;
+    }
+    .relative_teacher__3 {
+        position: relative;
+        padding-top:2rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        width: 250%;
+        height: 14%;
+        bottom: 54rem;
+        right: 14rem;
 }
