@@ -1,12 +1,13 @@
 .bg-teacher {
     width: 100%;
-    background-color: #F3F3F3 !important;
+    background-image: url(/images/banner_teacher.svg);
     height: auto;
 }
 .profess-teacher {
     font-size: 90px;
     font-weight: 700;
     margin-bottom: 8rem;
+    color: white;
 }
 .background__teacher {
     border-radius: 99px !important;
@@ -524,4 +525,5 @@ width: 670px;
         height: 14%;
         bottom: 54rem;
         right: 14rem;
+}
 }
